@@ -1,0 +1,34 @@
+#ddev-generated
+services:
+  bref:
+    build:
+      context: ./craft-cloud/bref
+    container_name: ddev-${DDEV_PROJECT}-bref
+    expose:
+      - "8000"
+    env_file:
+      - ./craft-cloud/bref/.env.static
+    environment:
+      HANDLER: ${DDEV_DOCROOT}/index.php
+      DOCUMENT_ROOT: ${DDEV_DOCROOT}
+      VIRTUAL_HOST: $DDEV_HOSTNAME
+      HTTP_EXPOSE: "8000:8000"
+      HTTPS_EXPOSE: "8081:8000"
+      PHP_IDE_CONFIG: serverName=bref
+      CRAFT_CLOUD_PROJECT_ID: craft-cloud-project-id
+      CRAFT_CLOUD_ENVIRONMENT_ID: craft-cloud-environment-id
+      CRAFT_CLOUD_BUILD_ID: craft-cloud-build-id
+      CRAFT_CLOUD_STORAGE_ENDPOINT: http://craft-cloud-minio.ddev-${DDEV_PROJECT}.orb.local:10101
+      CRAFT_CLOUD_CDN_BASE_URL: https://${DDEV_PROJECT}:10101/${DDEV_PROJECT}
+      CRAFT_CLOUD_ACCESS_KEY: craftcms
+      CRAFT_CLOUD_ACCESS_SECRET: craftcms
+      CRAFT_CLOUD_REGION: us-west-1
+    external_links:
+      - ddev-router:${DDEV_PROJECT}.ddev.site
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    volumes:
+      - .:/mnt/ddev_config
+      - ./craft-cloud/bref/php:/var/task/php
+      - ${DDEV_APPROOT}:/var/task:ro
