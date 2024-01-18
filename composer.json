@@ -37,7 +37,7 @@
         "symlink": true
       }
     },
-    "0": {
+    "craftcms": {
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
