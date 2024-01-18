@@ -27,5 +27,15 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
+  },
+  "repositories": {
+    "local": {
+      "type": "path",
+      "url": "./packages/*",
+      "options": {
+        "symlink": true
+      }
+    }
+
   }
 }

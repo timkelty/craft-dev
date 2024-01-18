@@ -1,0 +1,4 @@
+services:
+  web:
+    volumes:
+      - ~/path/to/craft/repo:/var/www/html/packages/craft:ro
