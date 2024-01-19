@@ -1,10 +1,10 @@
 name: craft-cloud
 repository: craftcms/ddev-craft-cloud
-version: 1.4.7
+version: 1.4.8
 dependencies:
     - ddev/ddev-redis-7
     - oblakstudio/ddev-minio
-install_date: "2024-01-18T22:40:26-05:00"
+install_date: "2024-01-19T17:01:47-05:00"
 project_files:
     - docker-compose.bref.yaml
     - craft-cloud

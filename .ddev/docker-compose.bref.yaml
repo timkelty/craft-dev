@@ -15,6 +15,7 @@ services:
       HTTP_EXPOSE: "8000:8000"
       HTTPS_EXPOSE: "8081:8000"
       PHP_IDE_CONFIG: serverName=bref
+      PHP_INI_SCAN_DIR: /var/task/.ddev/craft-cloud/bref/php
       CRAFT_CLOUD_PROJECT_ID: craft-cloud-project-id
       CRAFT_CLOUD_ENVIRONMENT_ID: craft-cloud-environment-id
       CRAFT_CLOUD_BUILD_ID: craft-cloud-build-id
@@ -30,5 +31,4 @@ services:
       com.ddev.approot: $DDEV_APPROOT
     volumes:
       - .:/mnt/ddev_config
-      - ./craft-cloud/bref/php:/var/task/php
       - ${DDEV_APPROOT}:/var/task:ro

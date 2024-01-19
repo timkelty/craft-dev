@@ -1,7 +1,7 @@
 name: redis
 repository: ddev/ddev-redis-7
 version: v2.6.1
-install_date: "2024-01-17T22:37:31-05:00"
+install_date: "2024-01-19T16:08:13-05:00"
 project_files:
     - commands/redis/redis
     - commands/redis/redis-flush
