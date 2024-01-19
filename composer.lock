@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "827a85f38ef12e48c5f9381bd59dbd35",
+    "content-hash": "8f953c3b57b87374489aba62a978abba",
     "packages": [
+        {
+            "name": "99designs/http-signatures",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/99designs/http-signatures-php.git",
+                "reference": "acb9d2e4f4661de9445fa5930b49a259bfd6175b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/99designs/http-signatures-php/zipball/acb9d2e4f4661de9445fa5930b49a259bfd6175b",
+                "reference": "acb9d2e4f4661de9445fa5930b49a259bfd6175b",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": "^1.0|^2.0",
+                "php": ">=5.5",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.11",
+                "guzzlehttp/psr7": "^1.2",
+                "phpunit/phpunit": "~4.8",
+                "symfony/http-foundation": "~2.8|~3.0",
+                "symfony/psr-http-message-bridge": "^1.0",
+                "zendframework/zend-diactoros": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HttpSignatures\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Annesley",
+                    "email": "paul@99designs.com"
+                }
+            ],
+            "description": "Sign and verify HTTP messages",
+            "keywords": [
+                "hmac",
+                "http",
+                "https",
+                "signature",
+                "signed",
+                "signing"
+            ],
+            "support": {
+                "issues": "https://github.com/99designs/http-signatures-php/issues",
+                "source": "https://github.com/99designs/http-signatures-php/tree/master"
+            },
+            "time": "2017-05-04T01:36:17+00:00"
+        },
         {
             "name": "aws/aws-crt-php",
             "version": "v1.2.4",
@@ -62,16 +120,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.296.5",
+            "version": "3.296.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "23b009f305278e227bc5149bcb8fc9c1503fb130"
+                "reference": "11d0a94f8b2539d587e2f6db7c2fa8e39fe78a67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/23b009f305278e227bc5149bcb8fc9c1503fb130",
-                "reference": "23b009f305278e227bc5149bcb8fc9c1503fb130",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/11d0a94f8b2539d587e2f6db7c2fa8e39fe78a67",
+                "reference": "11d0a94f8b2539d587e2f6db7c2fa8e39fe78a67",
                 "shasum": ""
             },
             "require": {
@@ -151,22 +209,22 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.296.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.296.6"
             },
-            "time": "2024-01-18T19:06:27+00:00"
+            "time": "2024-01-19T19:14:55+00:00"
         },
         {
             "name": "bref/bref",
-            "version": "2.1.11",
+            "version": "2.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brefphp/bref.git",
-                "reference": "65b318a0f0e400a3353c88ad2c8f4a67bb9df813"
+                "reference": "98ca24e49fc9e832a0c40288144547c2b1fbe920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brefphp/bref/zipball/65b318a0f0e400a3353c88ad2c8f4a67bb9df813",
-                "reference": "65b318a0f0e400a3353c88ad2c8f4a67bb9df813",
+                "url": "https://api.github.com/repos/brefphp/bref/zipball/98ca24e49fc9e832a0c40288144547c2b1fbe920",
+                "reference": "98ca24e49fc9e832a0c40288144547c2b1fbe920",
                 "shasum": ""
             },
             "require": {
@@ -220,7 +278,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brefphp/bref/issues",
-                "source": "https://github.com/brefphp/bref/tree/2.1.11"
+                "source": "https://github.com/brefphp/bref/tree/2.1.9"
             },
             "funding": [
                 {
@@ -232,20 +290,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-01T19:43:25+00:00"
+            "time": "2023-11-23T17:04:45+00:00"
         },
         {
             "name": "bref/extra-php-extensions",
-            "version": "1.3.3",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brefphp/extra-php-extensions.git",
-                "reference": "c33417eb484a014b9d69adb36318f3d60e229d9d"
+                "reference": "41827e1721d366207df08e0e8761f4af624e0dda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brefphp/extra-php-extensions/zipball/c33417eb484a014b9d69adb36318f3d60e229d9d",
-                "reference": "c33417eb484a014b9d69adb36318f3d60e229d9d",
+                "url": "https://api.github.com/repos/brefphp/extra-php-extensions/zipball/41827e1721d366207df08e0e8761f4af624e0dda",
+                "reference": "41827e1721d366207df08e0e8761f4af624e0dda",
                 "shasum": ""
             },
             "conflict": {
@@ -276,7 +334,7 @@
             "description": "Extra PHP extensions for your lambda application.",
             "support": {
                 "issues": "https://github.com/brefphp/extra-php-extensions/issues",
-                "source": "https://github.com/brefphp/extra-php-extensions/tree/1.3.3"
+                "source": "https://github.com/brefphp/extra-php-extensions/tree/1.3.2"
             },
             "funding": [
                 {
@@ -292,7 +350,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-12-06T18:02:53+00:00"
+            "time": "2023-09-29T05:57:13+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -1054,29 +1112,25 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "75e022c5377ee266e125f2c17bf20ba614a6e18a"
-            },
+            "version": "1.32.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/75e022c5377ee266e125f2c17bf20ba614a6e18a",
-                "reference": "75e022c5377ee266e125f2c17bf20ba614a6e18a",
-                "shasum": ""
+                "type": "path",
+                "url": "./packages/cloud-extension-yii2",
+                "reference": "8062ca9caaa0177341b14758565a5079563a7eba"
             },
             "require": {
-                "bref/bref": "^2",
-                "bref/extra-php-extensions": "^1.2",
-                "craftcms/cms": "^4.5.10 || ^5",
+                "99designs/http-signatures": "^4.0",
+                "bref/bref": "2.1.9",
+                "bref/extra-php-extensions": "1.3.2",
+                "craftcms/cms": "^4.6 || ^5",
                 "craftcms/flysystem": "^1.0.0",
                 "league/flysystem-aws-s3-v3": "^3.15",
                 "league/uri": "^7",
                 "league/uri-components": "^7",
                 "phlak/semver": "^4.1",
                 "symfony/process": "^6",
-                "yiisoft/yii2-queue": "^2.3"
+                "yiisoft/yii2-queue": "^2.3",
+                "yiisoft/yii2-redis": "^2.0"
             },
             "require-dev": {
                 "craftcms/ecs": "dev-main",
@@ -1087,33 +1141,36 @@
                 "bootstrap": "craft\\cloud\\Module"
             },
             "autoload": {
-                "files": [
-                    "autoload.php"
-                ],
                 "psr-4": {
                     "craft\\cloud\\": "src/"
-                }
+                },
+                "files": [
+                    "autoload.php"
+                ]
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "support": {
-                "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.22.0"
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ]
             },
-            "time": "2023-11-24T19:28:43+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "craftcms/cms",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/cms.git",
-                "reference": "a1d75421115bcd7308d1648821c4f2afc506a09b"
-            },
+            "version": "4.6.1",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a1d75421115bcd7308d1648821c4f2afc506a09b",
-                "reference": "a1d75421115bcd7308d1648821c4f2afc506a09b",
-                "shasum": ""
+                "type": "path",
+                "url": "./packages/craft-4",
+                "reference": "a1d75421115bcd7308d1648821c4f2afc506a09b"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
@@ -1183,7 +1240,6 @@
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
                 "ext-imagick": "Adds support for more image processing formats and options."
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1191,7 +1247,25 @@
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "crafttests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "codecept-build": [
+                    "codecept build"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ]
+            },
             "license": [
                 "proprietary"
             ],
@@ -1209,14 +1283,17 @@
                 "yii2"
             ],
             "support": {
-                "docs": "https://craftcms.com/docs/4.x/",
                 "email": "support@craftcms.com",
-                "forum": "https://craftcms.stackexchange.com/",
                 "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "rss": "https://github.com/craftcms/cms/releases.atom",
-                "source": "https://github.com/craftcms/cms"
+                "forum": "https://craftcms.stackexchange.com/",
+                "source": "https://github.com/craftcms/cms",
+                "docs": "https://craftcms.com/docs/4.x/",
+                "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-01-16T23:00:32+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "craftcms/flysystem",
@@ -3575,29 +3652,33 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.100",
+            "version": "v2.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+                "reference": "96c132c7f2f7bc3230723b66e89f8f150b29d5ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
-                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/96c132c7f2f7bc3230723b66e89f8f150b29d5ae",
+                "reference": "96c132c7f2f7bc3230723b66e89f8f150b29d5ae",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 7"
+                "php": ">=5.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
+                "phpunit/phpunit": "*"
             },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -3621,7 +3702,7 @@
                 "issues": "https://github.com/paragonie/random_compat/issues",
                 "source": "https://github.com/paragonie/random_compat"
             },
-            "time": "2020-10-15T08:29:30+00:00"
+            "time": "2022-02-16T17:07:03+00:00"
         },
         {
             "name": "phlak/semver",
@@ -4245,16 +4326,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "2.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
@@ -4263,7 +4344,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -4278,7 +4359,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -4292,9 +4373,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/2.0"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2023-04-04T09:54:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -8284,6 +8365,80 @@
             "time": "2023-10-03T16:02:00+00:00"
         },
         {
+            "name": "yiisoft/yii2-redis",
+            "version": "2.0.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-redis.git",
+                "reference": "08aecdf44e091c5fae3411e719ac0fdb803ef594"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-redis/zipball/08aecdf44e091c5fae3411e719ac0fdb803ef594",
+                "reference": "08aecdf44e091c5fae3411e719ac0fdb803ef594",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "yiisoft/yii2": "~2.0.39"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<7",
+                "yiisoft/yii2-dev": "~2.0.39"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\redis\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc"
+                }
+            ],
+            "description": "Redis Cache, Session and ActiveRecord for the Yii framework",
+            "keywords": [
+                "active-record",
+                "cache",
+                "redis",
+                "session",
+                "yii2"
+            ],
+            "support": {
+                "forum": "http://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/yii2-redis/issues",
+                "source": "https://github.com/yiisoft/yii2-redis",
+                "wiki": "http://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-redis",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-09-04T10:34:42+00:00"
+        },
+        {
             "name": "yiisoft/yii2-symfonymailer",
             "version": "2.0.4",
             "source": {
@@ -8776,17 +8931,11 @@
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "craftcms/cms",
-            "version": "dev-develop",
-            "alias": "4.6.1",
-            "alias_normalized": "4.6.1.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "craftcms/cms": 20
+        "craftcms/cms": 20,
+        "craftcms/cloud": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
