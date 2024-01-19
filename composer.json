@@ -32,7 +32,7 @@
   "repositories": {
     "local": {
       "type": "path",
-      "url": "./packages/*",
+      "url": "/tmp/packages/*",
       "options": {
         "symlink": true,
         "versions": {
