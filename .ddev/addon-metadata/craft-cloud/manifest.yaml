@@ -4,7 +4,7 @@ version: 1.4.8
 dependencies:
     - ddev/ddev-redis-7
     - oblakstudio/ddev-minio
-install_date: "2024-01-19T17:01:47-05:00"
+install_date: "2024-01-19T17:16:20-05:00"
 project_files:
     - docker-compose.bref.yaml
     - craft-cloud
