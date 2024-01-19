@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "143e572cf36b749cf8f9665fb1a822e3",
+    "content-hash": "a4f5fc6dcf06016f9b7bed0e5b6b9933",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -769,7 +769,7 @@
             "version": "4.6.1",
             "dist": {
                 "type": "path",
-                "url": "./packages/craft-4",
+                "url": "/tmp/packages/craft-4",
                 "reference": "a1d75421115bcd7308d1648821c4f2afc506a09b"
             },
             "require": {
@@ -892,7 +892,7 @@
             },
             "transport-options": {
                 "symlink": true,
-                "relative": true
+                "relative": false
             }
         },
         {
