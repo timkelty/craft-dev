@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "^4.4.0",
+    "craftcms/cms": "@dev",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -33,9 +33,11 @@
       "type": "path",
       "url": "./packages/*",
       "options": {
-        "symlink": true
+        "symlink": true,
+        "versions": {
+          "craftcms/cms": "4.6.1"
+        }
       }
     }
-
   }
 }
