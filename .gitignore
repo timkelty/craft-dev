@@ -2,3 +2,4 @@
 /.idea
 /vendor
 .DS_Store
+.ddev/docker-compose.local.yaml

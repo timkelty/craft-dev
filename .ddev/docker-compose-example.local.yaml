@@ -1,0 +1,5 @@
+services:
+  web:
+    volumes:
+      - ~/Dev/craft-3:/tmp/packages/craft-3
+      - ~/Dev/commerce-3:/tmp/packages/commerce-3
