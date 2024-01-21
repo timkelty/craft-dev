@@ -1,0 +1,22 @@
+dateModified: 1705845263
+email:
+  fromEmail: tim@craftcms.com
+  fromName: Craft
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2c63b0ac-ca04-4430-9c60-03d1cb7629c7: Craft # Craft
+    a2f70a3d-42d8-4242-8c91-80b313bb44bc: Common # Common
+    e54e6da4-3540-4e8b-8729-af6197e13aa6: Craft # Craft
+system:
+  edition: solo
+  live: true
+  name: Craft
+  schemaVersion: 3.8.0.1
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
