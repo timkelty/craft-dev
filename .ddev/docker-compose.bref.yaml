@@ -34,3 +34,5 @@ services:
     volumes:
       - .:/mnt/ddev_config
       - ${DDEV_APPROOT}:/var/task:ro
+      - ${DDEV_APPROOT}/.ddev/craft-cloud/bref/php/conf.d/php.ini:/opt/bref/etc/php/conf.d/ddev.ini
+      - ${DDEV_APPROOT}/.ddev/craft-cloud/bref/php/conf.dev.d/php.ini:/opt/bref/etc/php/conf.d/dev.ddev.ini
