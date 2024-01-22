@@ -8,6 +8,7 @@ services:
       - "8000"
     env_file:
       - ./craft-cloud/bref/.env.static
+      - ${DDEV_APPROOT}/.env
     environment:
       HANDLER: ${DDEV_DOCROOT}/index.php
       DOCUMENT_ROOT: ${DDEV_DOCROOT}
@@ -15,7 +16,8 @@ services:
       HTTP_EXPOSE: "8000:8000"
       HTTPS_EXPOSE: "8081:8000"
       PHP_IDE_CONFIG: serverName=bref
-      PHP_INI_SCAN_DIR: /var/task/.ddev/craft-cloud/bref/php
+      PHP_INI_SCAN_DIR: ":/var/task/.ddev/craft-cloud/bref/php/conf.d:/var/task/.ddev/craft-cloud/bref/php/conf.dev.d"
+      CRAFT_ALLOW_SUPERUSER: 1
       CRAFT_CLOUD_PROJECT_ID: craft-cloud-project-id
       CRAFT_CLOUD_ENVIRONMENT_ID: craft-cloud-environment-id
       CRAFT_CLOUD_BUILD_ID: craft-cloud-build-id
