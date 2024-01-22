@@ -16,7 +16,6 @@ services:
       HTTP_EXPOSE: "8000:8000"
       HTTPS_EXPOSE: "8081:8000"
       PHP_IDE_CONFIG: serverName=bref
-      PHP_INI_SCAN_DIR: ":/var/task/.ddev/craft-cloud/bref/php/conf.d:/var/task/.ddev/craft-cloud/bref/php/conf.dev.d"
       CRAFT_ALLOW_SUPERUSER: 1
       CRAFT_CLOUD_PROJECT_ID: craft-cloud-project-id
       CRAFT_CLOUD_ENVIRONMENT_ID: craft-cloud-environment-id
