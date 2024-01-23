@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cloud": "^1.33.0",
+    "craftcms/cloud": "1.0.x-dev",
     "craftcms/cms": "4.7.x-dev",
     "solspace/craft-freeform": "^5.0",
     "vlucas/phpdotenv": "^5.4.0"

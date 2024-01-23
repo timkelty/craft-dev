@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "008372130e219cae1e6e5439fbab2ab8",
+    "content-hash": "8e0569f49b835ff3f3d2c8bbc85d6523",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1181,16 +1181,16 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.33.0",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "b4f927e5b5b61f5840f76d18dadba8ae9eccdc1f"
+                "reference": "78e888588913585ff9bd6cfabfcbc9d52db1df4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/b4f927e5b5b61f5840f76d18dadba8ae9eccdc1f",
-                "reference": "b4f927e5b5b61f5840f76d18dadba8ae9eccdc1f",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/78e888588913585ff9bd6cfabfcbc9d52db1df4f",
+                "reference": "78e888588913585ff9bd6cfabfcbc9d52db1df4f",
                 "shasum": ""
             },
             "require": {
@@ -1226,9 +1226,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.33.0"
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/main"
             },
-            "time": "2024-01-23T14:31:17+00:00"
+            "time": "2024-01-23T17:01:24+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -10310,6 +10310,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "craftcms/cloud": 20,
         "craftcms/cms": 20
     },
     "prefer-stable": false,
