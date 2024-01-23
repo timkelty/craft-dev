@@ -27,6 +27,9 @@
   "scripts": {
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+    ],
+    "pre-update-cmd": [
+      "mkdir -p /tmp/packages"
     ]
   },
   "repositories": {
@@ -34,6 +37,7 @@
       "type": "path",
       "url": "/tmp/packages/*",
       "options": {
+        "reference": "none",
         "symlink": true,
         "versions": {
           "craftcms/cms": "4.6.1",
