@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae360bee881d961cdeb94e5a0caba8a6",
+    "content-hash": "578208d8ede7a27a7cbfd872f3c7e73f",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1115,8 +1115,7 @@
             "version": "1.32.0",
             "dist": {
                 "type": "path",
-                "url": "./.ddev/craft-cloud/packages/cloud-extension-yii2",
-                "reference": "b4f927e5b5b61f5840f76d18dadba8ae9eccdc1f"
+                "url": "./.ddev/craft-cloud/packages/cloud-extension-yii2"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -1169,8 +1168,7 @@
             "version": "4.6.1",
             "dist": {
                 "type": "path",
-                "url": "./.ddev/craft-cloud/packages/craft-4",
-                "reference": "a1d75421115bcd7308d1648821c4f2afc506a09b"
+                "url": "./.ddev/craft-cloud/packages/craft-4"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
