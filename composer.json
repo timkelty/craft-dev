@@ -35,10 +35,9 @@
       "url": "/tmp/packages/*",
       "options": {
         "symlink": true,
-        "reference": "none",
         "versions": {
           "craftcms/cms": "4.6.1",
-          "craftcms/cloud": "1.32.0"
+          "craftcms/cloud": "1.33.0"
         }
       }
     }
