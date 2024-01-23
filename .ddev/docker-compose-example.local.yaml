@@ -1,8 +1,8 @@
 services:
   web:
     volumes: &volumes
-      - ~/Dev/craft-4:/tmp/packages/craft-4
-      - ~/Dev/commerce-4:/tmp/packages/commerce-4
+      - ~/Dev/craft-5:/tmp/packages/craft-5
+      - ~/Dev/commerce-5:/tmp/packages/commerce-5
       - ~/Dev/cloud-extension-yii2:/tmp/packages/cloud-extension-yii2
   bref:
     volumes: *volumes
