@@ -1,0 +1,8 @@
+baseUrl: '@web/'
+handle: default
+hasUrls: true
+language: en-US
+name: 'Craft 5 Project'
+primary: true
+siteGroup: 7ce3d083-e1fc-4590-99ea-3823abbbd702 # Craft 5 Project
+sortOrder: 1

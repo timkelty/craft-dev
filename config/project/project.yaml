@@ -1,18 +1,17 @@
-dateModified: 1705627485
+dateModified: 1705970067
 email:
   fromEmail: tim@craftcms.com
-  fromName: 'Craft 4 Project'
+  fromName: 'Craft 5 Project'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft 4 Project' # Craft 4 Project
-    81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
-    283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft 4 Project' # Craft 4 Project
+    7ce3d083-e1fc-4590-99ea-3823abbbd702: 'Craft 5 Project' # Craft 5 Project
+    eb0a0fd2-aaf3-4dd4-99e6-457fd92acefe: 'Craft 5 Project' # Craft 5 Project
 system:
   edition: solo
   live: true
-  name: 'Craft 4 Project'
-  schemaVersion: 4.5.3.0
+  name: 'Craft 5 Project'
+  schemaVersion: 5.0.0.15
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
