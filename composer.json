@@ -1,7 +1,8 @@
 {
   "require": {
-    "craftcms/cms": "@dev",
-    "craftcms/cloud": "@dev",
+    "craftcms/cloud": "^1.33.0",
+    "craftcms/cms": "4.7.x-dev",
+    "solspace/craft-freeform": "^5.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -28,18 +29,5 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  },
-  "repositories": {
-    "local": {
-      "type": "path",
-      "url": "/tmp/packages/*",
-      "options": {
-        "symlink": true,
-        "versions": {
-          "craftcms/cms": "4.6.1",
-          "craftcms/cloud": "1.33.0"
-        }
-      }
-    }
   }
 }

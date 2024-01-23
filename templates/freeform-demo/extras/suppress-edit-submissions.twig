@@ -1,0 +1,79 @@
+{% extends "freeform-demo/_layout" %}
+
+{% set pageTitle = "Suppress Notifications when Editing Submissions | Extras" %}
+
+{# Replace 'freeformSuppressEdit' with your form handle #}
+{% set demoFormHandle = "freeformSuppressEdit" %}
+
+{% block content %}
+
+    {% set form = freeform.form(demoFormHandle, { formattingTemplate: pageTemplateFile }) %}
+
+    <div class="freeform-page-heading">
+        <h2>Suppress Notifications when Editing Submissions</h2>
+        <p>The following example shows how to suppress email notifications and other integrations from being triggered when editing an existing submission.</p>
+    </div>
+
+    {% if form and currentUser %}
+
+        <div class="freeform-notice{{ colorMode == "dark" ? " freeform-notice-dark" }}">
+            <p>Most Recent Submission from this Form:</p>
+            {% for submission in freeform.submissions({
+                form: form.handle,
+                orderBy: "dateCreated DESC",
+                limit: 1
+            }) %}
+            <h2>{{ submission.title }} <small>(#{{ submission.id }})</small></h2>
+            <p>Posted on {{ submission.dateCreated.format('F d, Y') }}</p>
+                {% if currentUser and currentUser.admin %}
+                    <a href="{{ siteUrl }}freeform-demo/extras/suppress-edit-submissions/edit/{{ submission.token }}" class="freeform-button orange">{{ "Edit this Submission"|t("freeform") }}</a>
+                {% else %}
+                    <p class="extras-instructions-warning">
+                        You must be logged in as an Admin to edit this submission.
+                    </p>
+                {% endif %}
+            {% else %}
+                <p class="extras-instructions-warning">
+                    You must have at least 1 submission for this form to experience the editing of a submission in this demo.
+                </p>
+            {% endfor %}
+        </div>
+
+        {# Adjust 'suppress' parameters as you please #}
+        {{ form.render({
+            form: form.handle,
+            submissionToken: craft.app.request.segment(5),
+            suppress: {
+                api: true,
+                connections: true,
+                adminNotifications: true,
+                dynamicRecipients: true,
+                submitterNotifications: true,
+                payments: true,
+                webhooks: true,
+            },
+        }) }}
+
+    {% else %}
+
+        <div class="freeform-error{{ colorMode == "dark" ? " freeform-notice-dark" }}">
+            <p>You must rename your form handle to <code>{{ demoFormHandle }}</code> and be logged in for this part of the demo to work.</p>
+        </div>
+
+    {% endif %}
+
+    <div class="extras-instructions">
+        <h4>This page will not display correctly until...</h4>
+        <p>
+            In order to view this page live, you'll need to make some adjustments to this template or on your test from:
+            <ol>
+                <li>Rename your test form handle to <code>{{ demoFormHandle }}</code> or adjust the form handle name inside this template to match your test form.</li>
+                <li>Make sure your test form includes a few fields or more.</li>
+                <li>In order to experience the suppression of email notifications, be sure to have some email notifications configured for this form.</li>
+                <li>Make sure you have at least 1 Freeform submission for this <code>{{ demoFormHandle }}</code> form.</li>
+                <li>The person viewing this form is an admin and logged into their Craft account to see this working.</li>
+            </ol>
+        </p>
+    </div>
+
+{% endblock %}

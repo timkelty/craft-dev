@@ -1,0 +1,56 @@
+{% extends "freeform-demo/_layout" %}
+
+{% set pageTitle = "Multiple Forms in the Same Page | Extras" %}
+
+{# Replace 'freeformMultipleForms' with your form handle #}
+{% set demoFormHandle = "freeformMultipleForms" %}
+
+{% block content %}
+
+    {% set form = freeform.form(demoFormHandle, { formattingTemplate: pageTemplateFile }) %}
+
+    <div class="freeform-page-heading">
+        <h2>Multiple Forms in the Same Page</h2>
+        <p>This example shows how you might have the same form (or 2 similar ones) more than once in the same template. Some complex field types and features might otherwise behave incorrectly unless some adjustments are made to the templates.</p>
+    </div>
+
+    {% if form %}
+
+        <h3>{{ form.name }} <small>(1st instance)</small></h3>
+
+        {# Apply 'id' and 'fieldIdPrefix' parameters with unique values #}
+        {{ form.render({
+            id: 'first-instance',
+            fieldIdPrefix: 'first-form-'
+        }) }}
+
+        <br /><br /><hr /><br /><br />
+
+        <h3>{{ form.name }} <small>(2nd instance)</small></h3>
+
+        {# Apply 'id' and 'fieldIdPrefix' parameters with unique values #}
+        {{ form.render({
+            id: 'second-instance',
+            fieldIdPrefix: 'second-form-'
+        }) }}
+
+    {% else %}
+
+        <div class="freeform-error{{ colorMode == "dark" ? " freeform-notice-dark" }}">
+            <p>You must rename your form handle to <code>{{ demoFormHandle }}</code> for this part of the demo to work.</p>
+        </div>
+
+    {% endif %}
+
+    {# Instructions to get this page working correctly #}
+    <div class="extras-instructions">
+        <h4>This page will not display correctly until...</h4>
+        <p>
+            In order to view this page live, you'll need to make some adjustments to this template or your test form:
+            <ol>
+                <li>Rename your test form handle to <code>{{ demoFormHandle }}</code> or adjust the form handle name inside this template to match your test form.</li>
+            </ol>
+        </p>
+    </div>
+
+{% endblock %}

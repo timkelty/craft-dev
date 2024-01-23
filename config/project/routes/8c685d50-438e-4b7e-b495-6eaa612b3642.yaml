@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 6
+template: /freeform-demo/submissions/view
+uriParts:
+  - freeform-demo/submissions/
+  -
+    - '*'
+    - '[^\/]+'
+  - /
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'freeform-demo/submissions/<any:[^\/]+>/<any2:[^\/]+>'

@@ -1,0 +1,10 @@
+siteUid: null
+sortOrder: 5
+template: /freeform-demo/submissions
+uriParts:
+  - freeform-demo/submissions/
+  -
+    - '*'
+    - '[^\/]+'
+  - /spam/
+uriPattern: 'freeform-demo/submissions/<any:[^\/]+>/spam/'

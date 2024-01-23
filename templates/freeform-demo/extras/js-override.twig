@@ -1,0 +1,67 @@
+{% extends "freeform-demo/_layout" %}
+
+{% set pageTitle = "Overriding Freeform JS behavior | Extras" %}
+
+{# Replace 'freeformJsOverrides' with your form handle #}
+{% set demoFormHandle = "freeformJsOverrides" %}
+
+{% block content %}
+
+    {% set form = freeform.form(demoFormHandle, { formattingTemplate: pageTemplateFile }) %}
+
+    <div class="freeform-page-heading">
+        <h2>Overriding Freeform JS behavior</h2>
+        <p>This example shows how to manually override Freeform's built-in JS behavior inside a template.</p>
+    </div>
+
+    {% if form %}
+
+        {{ form.render }}
+
+        <script>
+            // Replace with your own JS overrides
+            document.addEventListener("freeform-on-submit", function (event) {  
+                const form = event.form;
+
+                const name = form.querySelector('input[name="firstName"]').value;
+
+                // Prevent anyone except Bob from submitting the form
+                if (name !== 'Bob') {
+                    alert("You're not Bob! Please try again!");
+                    event.preventDefault();
+                }
+
+                // Force everyone to always be a Smith
+                form.querySelector('input[name="lastName"]').value = 'Smith';
+
+            });
+        </script>
+
+    {% else %}
+
+        <div class="freeform-error{{ colorMode == "dark" ? " freeform-notice-dark" }}">
+            <p>You must rename your form handle to <code>{{ demoFormHandle }}</code> for this part of the demo to work.</p>
+        </div>
+
+    {% endif %}
+
+    {# Instructions to get this page working correctly #}
+    <div class="extras-instructions">
+        <h4>This page will not display correctly until...</h4>
+        <p>
+            In order to view this page live, you'll need to make some adjustments to this template or your test form:
+            <ol>
+                <li>Rename your test form handle to <code>{{ demoFormHandle }}</code> or adjust the form handle name inside this template to match your test form.</li>
+                <li>
+                    Make sure your test form includes the following fields at minimum, or adjust the overrides inside this template:
+                    <ul>
+                        <li>First Name text field with handle of <code>firstName</code>.</li>
+                        <li>Last Name text field with handle of <code>lastName</code>.</li>
+                    </ul>
+                </li>
+                <li>Upon submit, this form will use JS to force a last name of "Smith" and validate that the first name is "Bob". A highly unlikely use-case, but the template code for this page indicates how you might get started with your own custom JS.</li>
+            </ol>
+        </p>
+    </div>
+
+{% endblock %}

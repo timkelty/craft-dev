@@ -1,0 +1,29 @@
+{% extends "freeform-demo/_layout" %}
+
+{% set pageTitle = "Extras" %}
+
+{% block content %}
+
+    <div class="freeform-page-heading">
+        <h2>Extras</h2>
+        <p>This section of the demo templates shows Freeform handling some real world / common implementations of forms.</p>
+    </div>
+
+    {% macro extrasIndex(template, name, description) %}
+        {% if template == "divider" %}
+            <hr />
+        {% else %}
+            <a href="{{ siteUrl }}freeform-demo/extras/{{ template }}" class="freeform-form-tile-item">
+                <h3>{{ name }}</h3>
+                <p>{{ description }}</p>
+            </a>
+        {% endif %}
+    {% endmacro %}
+
+    <div class="freeform-form-tiles">
+    {% for extrasItems in extrasTemplates -%}
+        {{ _self.extrasIndex(extrasItems['t'], extrasItems['n'], extrasItems['d']) }}
+    {%- endfor %}
+    </div>
+
+{% endblock %}
