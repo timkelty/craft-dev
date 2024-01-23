@@ -32,10 +32,9 @@
   "repositories": {
     "local": {
       "type": "path",
-      "url": "./.ddev/craft-cloud/packages/*",
+      "url": "/tmp/packages/*",
       "options": {
         "symlink": true,
-        "reference": "none",
         "versions": {
           "craftcms/cms": "4.6.1",
           "craftcms/cloud": "1.32.0"
