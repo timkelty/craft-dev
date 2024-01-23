@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e0569f49b835ff3f3d2c8bbc85d6523",
+    "content-hash": "542f309f4b9291936a224ec745fd2677",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1181,7 +1181,7 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
@@ -1211,6 +1211,7 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
+            "default-branch": true,
             "type": "yii2-extension",
             "extra": {
                 "bootstrap": "craft\\cloud\\Module"
@@ -10307,7 +10308,14 @@
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cloud",
+            "version": "dev-main",
+            "alias": "1.33.0",
+            "alias_normalized": "1.33.0.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cloud": 20,
