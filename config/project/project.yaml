@@ -1,4 +1,4 @@
-dateModified: 1705970067
+dateModified: 1706551588
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft 5 Project'
@@ -11,7 +11,7 @@ system:
   edition: solo
   live: true
   name: 'Craft 5 Project'
-  schemaVersion: 5.0.0.15
+  schemaVersion: 5.0.0.16
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
