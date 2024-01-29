@@ -3,6 +3,6 @@ services:
     volumes: &volumes
       - ~/Dev/craft-5:/tmp/packages/craft-5
       - ~/Dev/commerce-5:/tmp/packages/commerce-5
-      - ~/Dev/cloud-extension-yii2:/tmp/packages/cloud-extension-yii2
+      - ~/Dev/cloud-extension-yii2-v2:/tmp/packages/cloud-extension-yii2-v2
   bref:
     volumes: *volumes
