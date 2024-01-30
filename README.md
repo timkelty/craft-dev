@@ -84,6 +84,20 @@ Modify the `volumes` list to include any paths to checked out repos you'd like t
 
 ## PhpStorm Settings
 
+### Attach Projects
+
+For each package repo you want to work on, attach it via `File -> Attach project…`.
+
+- Funny things happen if you attached project have `.`s in them.
+- If `Attach Project…` isn't appearing, try the normal `Open…` dialog. It should ask you if you want to attach it. 
+
+![attach-project.png](storage/docs/attach-project.png)
+
+It should end up looking something like this:
+
+![attach-project.png](storage/docs/attached-projects-sidebar.png)
+
+
 ### `PHP -> Composer`
 
 - uncheck `Add packages as libraries`
