@@ -27,11 +27,6 @@ meta:
     7ccacf5c-0e1d-47b9-a681-52816c20f564: 'Test Volume' # Test Volume
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft 4 Project' # Craft 4 Project
-plugins:
-  freeform:
-    edition: express
-    enabled: true
-    schemaVersion: 5.0.21
 system:
   edition: pro
   live: true
