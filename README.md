@@ -129,7 +129,7 @@ It should end up looking something like this:
 
 ### `Languages & Frameworks -> JavaScript -> Libraries`
 
-- Add an entry and include the root of each of your _additional_ project roots (i.e. composer packages).
+- Add an entry and include the `src` directory of each of your _additional_ project roots (i.e. composer packages). Selecting the `src` directory prevents PhpStorm from indexing the vendor directory and contaminating PHP definitions.
 
 ![javascript-libraries.png](storage/docs/javascript-libraries.png)
 
