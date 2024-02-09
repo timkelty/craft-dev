@@ -25,6 +25,7 @@ services:
       CRAFT_CLOUD_ACCESS_KEY: ddevminio
       CRAFT_CLOUD_ACCESS_SECRET: ddevminio
       CRAFT_CLOUD_REGION: us-west-1
+      CRAFT_CLOUD_USE_ASSET_BUNDLE_CDN: 0
     external_links:
       - ddev-router:${DDEV_PROJECT}.ddev.site
     labels:

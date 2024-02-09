@@ -24,11 +24,6 @@
       "php": "8.2"
     }
   },
-  "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
-    ]
-  },
   "repositories": {
     "local": {
       "type": "path",
@@ -36,7 +31,7 @@
       "options": {
         "symlink": true,
         "versions": {
-          "craftcms/cms": "5.0.0-beta",
+          "craftcms/cms": "5.x-dev",
           "craftcms/cloud": "2.x-dev"
         }
       }
