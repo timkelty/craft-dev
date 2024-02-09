@@ -3,3 +3,4 @@
 /vendor
 .DS_Store
 .ddev/docker-compose.local.yaml
+config/license.key
