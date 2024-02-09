@@ -21,11 +21,12 @@ services:
       CRAFT_CLOUD_ENVIRONMENT_ID: craft-cloud-environment-id
       CRAFT_CLOUD_BUILD_ID: craft-cloud-build-id
       CRAFT_CLOUD_STORAGE_ENDPOINT: http://minio.ddev-${DDEV_PROJECT}.orb.local:10101
-      CRAFT_CLOUD_CDN_BASE_URL: https://${DDEV_PROJECT}:10101/${DDEV_PROJECT}
+      CRAFT_CLOUD_CDN_BASE_URL: https://${DDEV_PROJECT}.ddev.site:10101/craft-cloud-project-id
       CRAFT_CLOUD_ACCESS_KEY: ddevminio
       CRAFT_CLOUD_ACCESS_SECRET: ddevminio
       CRAFT_CLOUD_REGION: us-west-1
       CRAFT_CLOUD_USE_ASSET_BUNDLE_CDN: 0
+      CRAFT_CLOUD_USE_QUEUE: 0
     external_links:
       - ddev-router:${DDEV_PROJECT}.ddev.site
     labels:
