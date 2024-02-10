@@ -681,7 +681,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2-v2",
-                "reference": "6f1d21d830503536aa5249fbaa24ff9a2be09305"
+                "reference": "37e73c115b4d944a759f30814c0d636e9c09d3fe"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
