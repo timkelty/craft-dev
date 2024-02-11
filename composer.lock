@@ -735,7 +735,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-5",
-                "reference": "a054af1909583a068bae036e3464a27cdcd98e84"
+                "reference": "42c476dae1597f07a7e0fc96434fc3912a17d049"
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
