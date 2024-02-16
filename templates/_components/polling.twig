@@ -1,4 +1,5 @@
 {#--- _components/polling ---#}
+{% do craft.app.response.setNoCacheHeaders() %}
 
 {# Sets a default value if not defined by the `timezone` select field below #}
 {% set timezone = timezone ?? 'Europe/Vienna' %}
