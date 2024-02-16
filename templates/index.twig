@@ -10,8 +10,11 @@
 <body class="ltr">
 <div id="container">
     {{ sprig('_components/polling') }}
-    {{ sprig('_components/product-variant-switcher', { productId: 38 }) }}
-{#    {{ sprig('_components/product', { productId: 38 }) }}#}
+    {% set productId = craft.app.request.getParam('product') %}
+    {% if productId %}
+        {{ sprig('_components/product-variant-switcher', { productId: productId }) }}
+{#        {{ sprig('_components/product', { productId: productId }) }}#}
+    {% endif %}
 </div>
 </body>
 </html>
