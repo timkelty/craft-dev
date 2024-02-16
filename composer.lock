@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0f6a95bdacba14494607e0f7fb43295",
+    "content-hash": "4fa7fd37bc43143750504a0dc60f8521",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1113,10 +1113,16 @@
         {
             "name": "craftcms/cloud",
             "version": "1.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/cloud-extension-yii2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cloud-extension-yii2.git",
                 "reference": "0f08bc1dddf9b76d1b413d66516c1039e7cfe0e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/0f08bc1dddf9b76d1b413d66516c1039e7cfe0e4",
+                "reference": "0f08bc1dddf9b76d1b413d66516c1039e7cfe0e4",
+                "shasum": ""
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -1136,41 +1142,39 @@
                 "craftcms/ecs": "dev-main",
                 "craftcms/phpstan": "dev-main"
             },
+            "default-branch": true,
             "type": "yii2-extension",
             "extra": {
                 "bootstrap": "craft\\cloud\\Module"
             },
             "autoload": {
-                "psr-4": {
-                    "craft\\cloud\\": "src/"
-                },
                 "files": [
                     "autoload.php"
-                ]
-            },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
                 ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
+                "psr-4": {
+                    "craft\\cloud\\": "src/"
+                }
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.38.0"
+            },
+            "time": "2024-02-16T16:45:32+00:00"
         },
         {
             "name": "craftcms/cms",
             "version": "4.8.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cms.git",
                 "reference": "a6aca0f46397bf514bd9dff11c315a005fd37760"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6aca0f46397bf514bd9dff11c315a005fd37760",
+                "reference": "a6aca0f46397bf514bd9dff11c315a005fd37760",
+                "shasum": ""
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
@@ -1247,25 +1251,7 @@
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "crafttests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "codecept-build": [
-                    "codecept build"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1283,25 +1269,28 @@
                 "yii2"
             ],
             "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "forum": "https://craftcms.stackexchange.com/",
-                "source": "https://github.com/craftcms/cms",
                 "docs": "https://craftcms.com/docs/4.x/",
-                "rss": "https://github.com/craftcms/cms/releases.atom"
+                "email": "support@craftcms.com",
+                "forum": "https://craftcms.stackexchange.com/",
+                "issues": "https://github.com/craftcms/cms/issues?state=open",
+                "rss": "https://github.com/craftcms/cms/releases.atom",
+                "source": "https://github.com/craftcms/cms"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2024-02-15T20:41:46+00:00"
         },
         {
             "name": "craftcms/commerce",
             "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/commerce.git",
+                "reference": "c730d0531c6db1722edaa76d7900c9d54a0641c9"
+            },
             "dist": {
-                "type": "path",
-                "url": "/tmp/packages/commerce-4",
-                "reference": "ebed11720312d92309559e82d46748d2d0a90739"
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/commerce/zipball/c730d0531c6db1722edaa76d7900c9d54a0641c9",
+                "reference": "c730d0531c6db1722edaa76d7900c9d54a0641c9",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.6.0",
@@ -1324,6 +1313,7 @@
                 "craftcms/redactor": "*",
                 "vlucas/phpdotenv": "^3.4"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "handle": "commerce",
@@ -1338,21 +1328,7 @@
                     "craftcommercetests\\fixtures\\": "tests/fixtures/"
                 }
             },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ],
-                "testunit": [
-                    "Composer\\Config::disableProcessTimeout",
-                    "codecept run unit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1365,17 +1341,14 @@
                 "yii2"
             ],
             "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/commerce/issues?state=open",
-                "forum": "https://craftcms.stackexchange.com/",
-                "source": "https://github.com/craftcms/commerce",
                 "docs": "https://craftcms.com/docs/commerce/4.x/",
-                "rss": "https://github.com/craftcms/commerce/releases.atom"
+                "email": "support@craftcms.com",
+                "forum": "https://craftcms.stackexchange.com/",
+                "issues": "https://github.com/craftcms/commerce/issues?state=open",
+                "rss": "https://github.com/craftcms/commerce/releases.atom",
+                "source": "https://github.com/craftcms/commerce"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2024-02-14T00:28:59+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -5014,20 +4987,22 @@
         {
             "name": "putyourlightson/craft-sprig",
             "version": "2.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-sprig.git",
+                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114"
+            },
             "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-sprig",
-                "reference": "e2f08b4244512c93c5295b18d1be7d6e6aca45db"
+                "type": "zip",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/850bf29b99a47077fbd1ba6c9b4189b7b883e114",
+                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0",
                 "nystudio107/craft-code-editor": "^1.0.0",
                 "php": "^8.0.2",
                 "putyourlightson/craft-sprig-core": "^2.6.4"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5044,38 +5019,37 @@
                     "putyourlightson\\sprig\\plugin\\": "src/"
                 }
             },
-            "scripts": {
-                "phpstan": [
-                    "phpstan --ansi --memory-limit=1G"
-                ],
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --fix --ansi"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://putyourlightson.com/plugins/sprig",
-                "source": "https://github.com/putyourlightson/craft-sprig",
-                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
+                "issues": "https://github.com/putyourlightson/craft-sprig/issues",
+                "source": "https://github.com/putyourlightson/craft-sprig"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "funding": [
+                {
+                    "url": "https://github.com/bencroker",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-12-12T15:09:09+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
             "version": "2.6.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-sprig-core.git",
+                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb"
+            },
             "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-sprig-core",
-                "reference": "d08a4cf909e06658b0cf2e05b269ec983768d3e8"
+                "type": "zip",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
+                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
@@ -5097,33 +5071,17 @@
                     "putyourlightson\\sprig\\": "src/"
                 }
             },
-            "scripts": {
-                "phpstan": [
-                    "phpstan --ansi --memory-limit=1G"
-                ],
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --fix --ansi"
-                ],
-                "test": [
-                    "codecept run unit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://github.com/putyourlightson/craft-sprig-core",
-                "source": "https://github.com/putyourlightson/craft-sprig-core",
-                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues"
+                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues",
+                "source": "https://github.com/putyourlightson/craft-sprig-core"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2024-02-09T02:28:56+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
