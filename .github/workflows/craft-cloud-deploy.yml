@@ -1,0 +1,40 @@
+name: Deploy to Craft Cloud
+
+on:
+  push:
+    branches:
+      - 4.x
+      - 5.x
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  update-cloud-branch:
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup PHP with tools
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Remove local repositories
+        run: composer config repositories.local --unset
+
+      - name: Update composer.lock
+        run: composer update
+
+      - name: Setup Git User
+        run: |
+          git config user.name "shinybrad"
+          git config user.email "shinybrad@users.noreply.github.com"
+
+      - name: Update ${{ github.ref }}-cloud Branch
+        run: |
+          git checkout -B ${{ github.ref }}-cloud
+          git add composer.json composer.lock
+          git commit -m "Update composer dependencies"
+          git push origin ${{ github.ref }}-cloud --force
