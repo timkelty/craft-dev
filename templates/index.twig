@@ -9,6 +9,7 @@
 </head>
 <body class="ltr">
 <div id="container">
+    {{ sprig.triggerRefreshOnLoad() }}
     {{ sprig('_components/polling') }}
     {% set productId = craft.app.request.getParam('product') %}
     {% if productId %}
