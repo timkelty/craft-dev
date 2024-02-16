@@ -1,0 +1,97 @@
+descriptionFormat: '{product.title} - {title}'
+handle: widgets
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: true
+name: Widgets
+productFieldLayouts:
+  2ad2cfaa-8213-4e9a-8c35-8b983dab5e7d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 709732ef-b9d6-48a0-8f9e-72a42ccca83e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: c3317fd7-2a6c-4429-af9e-0ba2237fa804
+            userCondition: null
+            warning: null
+        name: Content
+        uid: d562bf24-2c41-404b-9760-f852dc30e7ad
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  1c4db2bd-b409-4bf2-a56e-c3327f0b160e: # Craft 4 Project
+    hasUrls: true
+    template: ''
+    uriFormat: 'widgets/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  2d448689-404a-4a81-931f-e0af417d34f8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: 0ce5538f-511c-4017-b1fc-3c497b5e82fa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d8884d5b-78c1-446f-a50e-f3d8790db8ef
+        userCondition: null
+variantTitleFormat: '{product.title}'

@@ -1,0 +1,31 @@
+{#--- _components/product-variant-switcher ---#}
+
+{% set cart = craft.commerce.getCarts().getCart()%}
+{% set variantId = variantId ?? null %}
+
+{% set product = craft.products.id(productId).one() %}
+{% set selectedVariant = product.defaultVariant %}
+{% set productVariants = product.variants %}
+
+{% for productVariant in productVariants %}
+    {% if productVariant.id == variantId %}
+        {% set selectedVariant = productVariant %}
+    {% endif %}
+{% endfor %}
+
+Cart Total: {{ craft.commerce.carts.cart.itemTotal|currency('USD') }}
+
+<h2>{{ product.title }}</h2>
+
+Selected Variant:
+{{ selectedVariant.sku }} - {{ selectedVariant.price|commerceCurrency }}
+
+<button sprig s-method="post" s-action="commerce/cart/update-cart"
+        s-val:purchasable-id="{{ selectedVariant.id }}"
+>
+    Add to Cart
+</button>
+
+{% if success is defined %}
+    {{ success ? flashes.notice : flashes.error }}
+{% endif %}

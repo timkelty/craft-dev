@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 11
+template: /freeform-demo/extras/suppress-edit-submissions
+uriParts:
+  - freeform-demo/extras/suppress-edit-submissions/edit/
+  -
+    - token
+    - \w+
+uriPattern: 'freeform-demo/extras/suppress-edit-submissions/edit/<token:\w+>'

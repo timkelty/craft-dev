@@ -1,0 +1,17 @@
+siteUid: null
+sortOrder: 3
+template: /freeform-demo/templates/form
+uriParts:
+  - freeform-demo/templates/
+  -
+    - '*'
+    - '[^\/]+'
+  - /
+  -
+    - '*'
+    - '[^\/]+'
+  - /edit/
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'freeform-demo/templates/<any:[^\/]+>/<any2:[^\/]+>/edit/<any3:[^\/]+>'

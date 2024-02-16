@@ -1,4 +1,4 @@
-dateModified: 1708095425
+dateModified: 1708106156
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft 4 Project'
@@ -37,8 +37,16 @@ meta:
     32e5ca18-1539-4832-b094-498a728bd57d: 'Private Volume' # Private Volume
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft 4 Project' # Craft 4 Project
+    851f1119-82f1-474c-904e-ba6a256cfea9: Widgets # Widgets
+    6312cf54-90a9-46ff-86cb-709c6ae31030: Dummy # Dummy
+    a638b96b-d9f9-4d3b-871b-e0bf74ecd63c: New # New
     e847f176-16bf-4722-9bed-ee3d591ed3cb: 'Public Schema' # Public Schema
 plugins:
+  commerce:
+    edition: lite
+    enabled: true
+    licenseKey: JGTDNO1QJUWIML01B5IVERMU
+    schemaVersion: 4.2.8
   sprig:
     edition: standard
     enabled: true

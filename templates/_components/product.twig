@@ -1,0 +1,77 @@
+{% do craft.app.response.setNoCacheHeaders() %}
+{% set variantParam = 'variant' %}
+
+{# set product #}
+{% set product = craft.products.id(productId).one() %}
+
+{# set variant #}
+{% set variant = product.defaultVariant %}
+
+{# change variant if url param is present #}
+{% if product.variants|filter(v => v.id == craft.app.request.getParam(variantParam)) is not empty %}
+    {% set variant = product.variants|filter(v => v.id == craft.app.request.getParam(variantParam))|first %}
+{% endif %}
+
+
+Cart Total: {{ craft.commerce.carts.cart.itemTotal|currency('USD') }}
+
+
+{# product content #}
+<h1>{{product.title}}</h1>
+
+{# reactive component starts #}
+<div id="sprig">
+
+    {# show price and sku #}
+    Variant: {{variant.sku}} - {{variant.price|commerceCurrency}}
+
+    {# basket #}
+    <form action="" method="post" >
+        {{ actionInput('commerce/cart/update-cart') }}
+        {{ csrfInput() }}
+        {{ hiddenInput('purchasableId', variant.id) }}
+        <button>Add to cart</button>
+    </form>
+    {# </div> #}
+
+    {# variant switcher #}
+    {% if product.variants|length > 1 %}
+        <div class="variant-widget" s-include="this">
+            {% for option in product.variants %}
+                <button
+                        class="{{variant.id == option.id ? 'is-selected'}}"
+                        sprig
+                        s-push-url="?{{variantParam ~ '=' ~ option.id}}"
+                        s-replace="#sprig"
+                        s-val:{{variantParam}}="{{ option.id }}"
+                        s-indicator="#preloader"
+                        s-method="post"
+                >
+                    {{option.sku}}
+                </button>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {# preloader #}
+    <div id="preloader">
+        Loading
+    </div>
+
+</div>
+
+{# show/hide preloader #}
+<style>
+    #preloader {
+        display: none;
+    }
+    #preloader.htmx-request {
+        display: block;
+    }
+</style>
+
+{% js %}
+    document.body.addEventListener('htmx:afterSwap', function(evt) {
+    // reinitialize js scripts
+    });
+{% endjs %}

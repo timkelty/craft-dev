@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 8
+template: /freeform-demo/submissions/delete
+uriParts:
+  - freeform-demo/submissions/delete/
+  -
+    - '*'
+    - '[^\/]+'
+  - /
+  -
+    - '*'
+    - '[^\/]+'
+uriPattern: 'freeform-demo/submissions/delete/<any:[^\/]+>/<any2:[^\/]+>'
