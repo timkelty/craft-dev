@@ -3,8 +3,8 @@ name: Deploy to Craft Cloud
 on:
   push:
     branches:
-      - 4.x*
-      - 5.x*
+      - '4.x**'
+      - '5.x**'
   workflow_dispatch:
 
 permissions:
