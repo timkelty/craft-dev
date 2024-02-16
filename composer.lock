@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43bcbdab7abe3d7314b412def5ab1333",
+    "content-hash": "e32e57c2de8b9fa901dada52f04ffe98",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -677,7 +677,7 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "2.0.x-dev",
+            "version": "2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2-v2",
