@@ -120,16 +120,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.299.0",
+            "version": "3.299.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f"
+                "reference": "a0f87b8e8bfb9afd0ffd702fcda556b465eee457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/76d1165568d949b430a87eaa42f6dbc4b6705b6f",
-                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a0f87b8e8bfb9afd0ffd702fcda556b465eee457",
+                "reference": "a0f87b8e8bfb9afd0ffd702fcda556b465eee457",
                 "shasum": ""
             },
             "require": {
@@ -209,9 +209,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.299.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.299.1"
             },
-            "time": "2024-02-15T19:08:34+00:00"
+            "time": "2024-02-16T19:08:34+00:00"
         },
         {
             "name": "bref/bref",
@@ -5014,22 +5014,20 @@
         {
             "name": "putyourlightson/craft-sprig",
             "version": "2.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-sprig.git",
-                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/850bf29b99a47077fbd1ba6c9b4189b7b883e114",
-                "reference": "850bf29b99a47077fbd1ba6c9b4189b7b883e114",
-                "shasum": ""
+                "type": "path",
+                "url": "/tmp/packages/craft-sprig",
+                "reference": "e2f08b4244512c93c5295b18d1be7d6e6aca45db"
             },
             "require": {
                 "craftcms/cms": "^4.0",
                 "nystudio107/craft-code-editor": "^1.0.0",
                 "php": "^8.0.2",
                 "putyourlightson/craft-sprig-core": "^2.6.4"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5046,37 +5044,38 @@
                     "putyourlightson\\sprig\\plugin\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "phpstan": [
+                    "phpstan --ansi --memory-limit=1G"
+                ],
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --fix --ansi"
+                ]
+            },
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://putyourlightson.com/plugins/sprig",
-                "issues": "https://github.com/putyourlightson/craft-sprig/issues",
-                "source": "https://github.com/putyourlightson/craft-sprig"
+                "source": "https://github.com/putyourlightson/craft-sprig",
+                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/bencroker",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-12T15:09:09+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "putyourlightson/craft-sprig-core",
             "version": "2.6.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-sprig-core.git",
-                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
-                "reference": "d81e3f344fca08eb0b49cd3a4ad6a2c8d9aedbcb",
-                "shasum": ""
+                "type": "path",
+                "url": "/tmp/packages/craft-sprig-core",
+                "reference": "d08a4cf909e06658b0cf2e05b269ec983768d3e8"
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
@@ -5098,17 +5097,33 @@
                     "putyourlightson\\sprig\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "phpstan": [
+                    "phpstan --ansi --memory-limit=1G"
+                ],
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --fix --ansi"
+                ],
+                "test": [
+                    "codecept run unit"
+                ]
+            },
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://github.com/putyourlightson/craft-sprig-core",
-                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues",
-                "source": "https://github.com/putyourlightson/craft-sprig-core"
+                "source": "https://github.com/putyourlightson/craft-sprig-core",
+                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues"
             },
-            "time": "2024-02-09T02:28:56+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "ralouphie/getallheaders",
