@@ -1,7 +1,7 @@
 {
   "require": {
-    "craftcms/cms": "@dev",
-    "craftcms/cloud": "@dev",
+    "craftcms/cms": "5.0.x-dev",
+    "craftcms/cloud": "2.0.x-dev",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -29,11 +29,7 @@
       "type": "path",
       "url": "/tmp/packages/*",
       "options": {
-        "symlink": true,
-        "versions": {
-          "craftcms/cms": "5.x-dev",
-          "craftcms/cloud": "2.x-dev"
-        }
+        "symlink": true
       }
     }
   }
