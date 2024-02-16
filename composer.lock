@@ -120,16 +120,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.298.7",
+            "version": "3.299.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b4d98bfc70df146774bf9b04f5ac5b39955fbad2"
+                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b4d98bfc70df146774bf9b04f5ac5b39955fbad2",
-                "reference": "b4d98bfc70df146774bf9b04f5ac5b39955fbad2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/76d1165568d949b430a87eaa42f6dbc4b6705b6f",
+                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f",
                 "shasum": ""
             },
             "require": {
@@ -209,9 +209,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.299.0"
             },
-            "time": "2024-02-09T19:07:04+00:00"
+            "time": "2024-02-15T19:08:34+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -681,7 +681,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2-v2",
-                "reference": "37e73c115b4d944a759f30814c0d636e9c09d3fe"
+                "reference": "f7d23116bcd2d86d2c59e67767b82b2d9799edad"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -735,7 +735,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-5",
-                "reference": "42c476dae1597f07a7e0fc96434fc3912a17d049"
+                "reference": "2f959ac6cb5107f9956bc50afa41f6c5440f0f34"
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
@@ -2100,16 +2100,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v10.43.0",
+            "version": "v10.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "221c1ee944cb20ed807a8a5e8668552d6ca736ff"
+                "reference": "5cedaba39e331cffd73a01cf27ea83229fa11fba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/221c1ee944cb20ed807a8a5e8668552d6ca736ff",
-                "reference": "221c1ee944cb20ed807a8a5e8668552d6ca736ff",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/5cedaba39e331cffd73a01cf27ea83229fa11fba",
+                "reference": "5cedaba39e331cffd73a01cf27ea83229fa11fba",
                 "shasum": ""
             },
             "require": {
@@ -2151,11 +2151,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-01-22T13:55:20+00:00"
+            "time": "2024-02-09T15:56:19+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v10.43.0",
+            "version": "v10.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2201,7 +2201,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v10.43.0",
+            "version": "v10.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2249,7 +2249,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v10.43.0",
+            "version": "v10.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2932,41 +2932,41 @@
         },
         {
             "name": "moneyphp/money",
-            "version": "v4.4.0",
+            "version": "v4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moneyphp/money.git",
-                "reference": "5e60aebf09f709dd4ea16bf85e66d65301c0d172"
+                "reference": "a1daa7daf159b4044e3d0c34c41fe2be5860e850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moneyphp/money/zipball/5e60aebf09f709dd4ea16bf85e66d65301c0d172",
-                "reference": "5e60aebf09f709dd4ea16bf85e66d65301c0d172",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/a1daa7daf159b4044e3d0c34c41fe2be5860e850",
+                "reference": "a1daa7daf159b4044e3d0c34c41fe2be5860e850",
                 "shasum": ""
             },
             "require": {
                 "ext-bcmath": "*",
                 "ext-filter": "*",
                 "ext-json": "*",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
                 "cache/taggable-cache": "^1.1.0",
-                "doctrine/coding-standard": "^9.0",
-                "doctrine/instantiator": "^1.4.0",
+                "doctrine/coding-standard": "^12.0",
+                "doctrine/instantiator": "^1.5.0 || ^2.0",
                 "ext-gmp": "*",
                 "ext-intl": "*",
-                "florianv/exchanger": "^2.6.3",
+                "florianv/exchanger": "^2.8.1",
                 "florianv/swap": "^4.3.0",
-                "moneyphp/crypto-currencies": "^1.0.0",
-                "moneyphp/iso-currencies": "^3.2.1",
-                "php-http/message": "^1.11.0",
-                "php-http/mock-client": "^1.4.1",
+                "moneyphp/crypto-currencies": "^1.1.0",
+                "moneyphp/iso-currencies": "^3.4",
+                "php-http/message": "^1.16.0",
+                "php-http/mock-client": "^1.6.0",
                 "phpbench/phpbench": "^1.2.5",
-                "phpunit/phpunit": "^9.5.4",
+                "phpunit/phpunit": "^10.5.9",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "psr/cache": "^1.0.1 || ^2.0 || ^3.0",
-                "vimeo/psalm": "~5.15.0"
+                "vimeo/psalm": "~5.20.0"
             },
             "suggest": {
                 "ext-gmp": "Calculate without integer limits",
@@ -3014,9 +3014,9 @@
             ],
             "support": {
                 "issues": "https://github.com/moneyphp/money/issues",
-                "source": "https://github.com/moneyphp/money/tree/v4.4.0"
+                "source": "https://github.com/moneyphp/money/tree/v4.5.0"
             },
-            "time": "2024-01-24T08:29:16+00:00"
+            "time": "2024-02-15T19:47:21+00:00"
         },
         {
             "name": "monolog/monolog",
