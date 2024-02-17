@@ -11,7 +11,7 @@ system:
   edition: solo
   live: true
   name: 'Craft 5 Project'
-  schemaVersion: 5.0.0.16
+  schemaVersion: 5.0.0.19
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
