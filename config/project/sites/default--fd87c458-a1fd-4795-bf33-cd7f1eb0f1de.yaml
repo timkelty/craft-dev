@@ -1,0 +1,8 @@
+baseUrl: '@web/'
+handle: default
+hasUrls: true
+language: en-US
+name: 'Craft Project'
+primary: true
+siteGroup: f89ec9e3-4a4e-4a64-8c8c-3bb3673e4729 # Craft Project
+sortOrder: 1

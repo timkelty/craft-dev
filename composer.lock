@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccf66afaeaa01be54b2b2aa9d178317b",
+    "content-hash": "db66d4d0a407ac87eadc39bac0a243d0",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1116,7 +1116,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2",
-                "reference": "529dfc6a6e50c7853b3a1586c129330557584423"
+                "reference": "c531b0cd21be0afda84f15cc8d2ce2b2607c5003"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -1166,11 +1166,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.8.x-dev",
+            "version": "dev-bugfix/cloud-uploader",
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-4",
-                "reference": "343539d2a973c8fa83e7e3a419b088198ea97484"
+                "reference": "f1ddca20272ae6609c744f3b4ac0bb90c790915c"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
@@ -8482,16 +8482,16 @@
     "packages-dev": [
         {
             "name": "craftcms/generator",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/generator.git",
-                "reference": "8f3ac6ce89ad7760b2f2881549b73b437bc0ca59"
+                "reference": "ef136309da97acc98a178c88b466c6d7dade1a32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/generator/zipball/8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
-                "reference": "8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
+                "url": "https://api.github.com/repos/craftcms/generator/zipball/ef136309da97acc98a178c88b466c6d7dade1a32",
+                "reference": "ef136309da97acc98a178c88b466c6d7dade1a32",
                 "shasum": ""
             },
             "require": {
@@ -8537,7 +8537,7 @@
                 "rss": "https://github.com/craftcms/generator/releases.atom",
                 "source": "https://github.com/craftcms/generator"
             },
-            "time": "2023-08-11T01:27:27+00:00"
+            "time": "2024-03-06T12:13:24+00:00"
         },
         {
             "name": "nette/php-generator",
@@ -8896,7 +8896,14 @@
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cms",
+            "version": "dev-bugfix/cloud-uploader",
+            "alias": "4.8",
+            "alias_normalized": "4.8.0.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cms": 20,

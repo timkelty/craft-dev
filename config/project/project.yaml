@@ -1,17 +1,59 @@
-dateModified: 1705627485
+dateModified: 1709741140
 email:
   fromEmail: tim@craftcms.com
-  fromName: 'Craft 4 Project'
+  fromName: 'Craft Project'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  localUploads:
+    hasUrls: true
+    name: 'Local Uploads'
+    settings:
+      path: '@webroot/uploads-local'
+    type: craft\fs\Local
+    url: '@web/uploads-local'
+  localUploads2:
+    hasUrls: true
+    name: 'Local Uploads 2'
+    settings:
+      path: '@webroot/uploads2-local'
+    type: craft\fs\Local
+    url: '@webroot/uploads2-local'
+  uploads:
+    hasUrls: true
+    name: 'Cloud Uploads'
+    settings:
+      expires: '1 years'
+      hasUrls: true
+      localFsPath: '@webroot/uploads'
+      localFsUrl: '@web/uploads'
+      subpath: uploads
+    type: craft\cloud\fs\AssetsFs
+  uploads2:
+    hasUrls: true
+    name: 'Cloud Uploads 2'
+    settings:
+      expires: '1 years'
+      hasUrls: true
+      localFsPath: '@webroot/uploads2'
+      localFsUrl: '@web/uploads2'
+      subpath: uploads2
+    type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
-    1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft 4 Project' # Craft 4 Project
-    81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
-    283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft 4 Project' # Craft 4 Project
+    4ef24029-7efa-4c7d-8931-9421b4ed9531: Common # Common
+    12ebe9f9-bff1-4728-b9ce-4bfee2128ada: 'Local Uploads' # Local Uploads
+    051a1185-077a-436b-ba21-9b387f9e5792: Blog # Blog
+    55f51928-0140-4cc4-8297-8eb1c75aa137: Assets # Assets
+    a5c039a6-2a22-4ab8-ba94-ae0b05659989: 'Local Uploads 2' # Local Uploads 2
+    ae206acc-928e-48f2-b2ad-e0fe0c5fd4ff: Default # Default
+    b7ffbdbb-b407-4351-9c22-b6b7f6925625: 'Cloud Uploads 2' # Cloud Uploads 2
+    ebb28449-0c0f-4753-b7f0-2a386651d786: 'Cloud Uploads' # Cloud Uploads
+    f89ec9e3-4a4e-4a64-8c8c-3bb3673e4729: 'Craft Project' # Craft Project
+    fd87c458-a1fd-4795-bf33-cd7f1eb0f1de: 'Craft Project' # Craft Project
 system:
-  edition: solo
+  edition: pro
   live: true
-  name: 'Craft 4 Project'
+  name: 'Craft Project'
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:

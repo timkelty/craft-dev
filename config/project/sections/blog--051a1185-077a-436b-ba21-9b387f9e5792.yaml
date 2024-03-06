@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: blog
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fd87c458-a1fd-4795-bf33-cd7f1eb0f1de: # Craft Project
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/_entry
+    uriFormat: 'blog/{slug}'
+type: channel
