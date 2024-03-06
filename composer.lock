@@ -1170,7 +1170,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-4",
-                "reference": "f1ddca20272ae6609c744f3b4ac0bb90c790915c"
+                "reference": "7981eddffd3bcdf341bb0357a1780c65d12339b1"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
