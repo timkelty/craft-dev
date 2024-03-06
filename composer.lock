@@ -1116,7 +1116,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2",
-                "reference": "529dfc6a6e50c7853b3a1586c129330557584423"
+                "reference": "c531b0cd21be0afda84f15cc8d2ce2b2607c5003"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -8482,16 +8482,16 @@
     "packages-dev": [
         {
             "name": "craftcms/generator",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/generator.git",
-                "reference": "8f3ac6ce89ad7760b2f2881549b73b437bc0ca59"
+                "reference": "ef136309da97acc98a178c88b466c6d7dade1a32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/generator/zipball/8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
-                "reference": "8f3ac6ce89ad7760b2f2881549b73b437bc0ca59",
+                "url": "https://api.github.com/repos/craftcms/generator/zipball/ef136309da97acc98a178c88b466c6d7dade1a32",
+                "reference": "ef136309da97acc98a178c88b466c6d7dade1a32",
                 "shasum": ""
             },
             "require": {
@@ -8537,7 +8537,7 @@
                 "rss": "https://github.com/craftcms/generator/releases.atom",
                 "source": "https://github.com/craftcms/generator"
             },
-            "time": "2023-08-11T01:27:27+00:00"
+            "time": "2024-03-06T12:13:24+00:00"
         },
         {
             "name": "nette/php-generator",
