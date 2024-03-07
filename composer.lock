@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db66d4d0a407ac87eadc39bac0a243d0",
+    "content-hash": "ccf66afaeaa01be54b2b2aa9d178317b",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -120,16 +120,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.300.11",
+            "version": "3.300.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b1c05a5d3cb429aa5d9ffa69066ce46e3d7aca52"
+                "reference": "0c38aec51d8dc76d6b56a6be05c37b0aff86de2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b1c05a5d3cb429aa5d9ffa69066ce46e3d7aca52",
-                "reference": "b1c05a5d3cb429aa5d9ffa69066ce46e3d7aca52",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0c38aec51d8dc76d6b56a6be05c37b0aff86de2d",
+                "reference": "0c38aec51d8dc76d6b56a6be05c37b0aff86de2d",
                 "shasum": ""
             },
             "require": {
@@ -209,9 +209,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.12"
             },
-            "time": "2024-03-05T19:08:14+00:00"
+            "time": "2024-03-06T19:38:08+00:00"
         },
         {
             "name": "bref/bref",
@@ -1116,7 +1116,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2",
-                "reference": "c531b0cd21be0afda84f15cc8d2ce2b2607c5003"
+                "reference": "6ef7dff1cdd3fd0dac051be65ce992545a547a1a"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -1166,11 +1166,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "dev-bugfix/cloud-uploader",
+            "version": "4.8.x-dev",
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-4",
-                "reference": "7981eddffd3bcdf341bb0357a1780c65d12339b1"
+                "reference": "343539d2a973c8fa83e7e3a419b088198ea97484"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
@@ -8896,14 +8896,7 @@
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "craftcms/cms",
-            "version": "dev-bugfix/cloud-uploader",
-            "alias": "4.8",
-            "alias_normalized": "4.8.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cms": 20,
