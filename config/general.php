@@ -4,13 +4,19 @@ use mikehaertl\shellcommand\Command as ShellCommand;
 
 return GeneralConfig::create()
     ->restoreCommand([
-        'archiveFormat' => true,
+        'archiveFormat' => true, // pgsql-only
+
+        // example: add an arg
         'callback' => fn(ShellCommand $command) => $command->addArg('--verbose'),
     ])
     ->backupCommand([
         'ignoreTables' => ['foo', 'bar'],
-        'archiveFormat' => true,
+        'archiveFormat' => true, // pgsql-only
+
+        // example: remove an arg
         'callback' => function (ShellCommand $command) {
-            return $command->addArg('--verbose');
+            $command->setArgs(str_replace('--dump-date', '', $command->getArgs()));
+
+            return $command;
         },
     ]);

@@ -1,11 +1,11 @@
-dateModified: 1705627485
+dateModified: 1710440423
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft 4 Project'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft 4 Project' # Craft 4 Project
+    1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft 4 Project' # Craft 4 Project
 system:
