@@ -1,4 +1,45 @@
-dateModified: 1709741140
+dateModified: 1710469187
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:ebb28449-0c0f-4753-b7f0-2a386651d786' # Cloud Uploads
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - uploader
+        - link
+      type: native
+    -
+      key: 'volume:b7ffbdbb-b407-4351-9c22-b6b7f6925625' # Cloud Uploads 2
+      type: native
+    -
+      key: 'volume:12ebe9f9-bff1-4728-b9ce-4bfee2128ada' # Local Uploads
+      type: native
+    -
+      key: 'volume:a5c039a6-2a22-4ab8-ba94-ae0b05659989' # Local Uploads 2
+      type: native
+    -
+      key: 'folder:fd912745-4661-4156-ae9e-0706f35d6507'
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\assets\AssetCondition
+        elementType: craft\elements\Asset
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:b7f54890-11dd-4b6f-bd09-5b1688a8aa20'
+      label: adad
+      tableAttributes:
+        - filename
+        - size
+      type: custom
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
