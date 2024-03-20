@@ -30,12 +30,5 @@
     ]
   },
   "repositories": {
-    "local": {
-      "type": "path",
-      "url": "/tmp/packages/*",
-      "options": {
-        "symlink": true
-      }
-    }
   }
 }
