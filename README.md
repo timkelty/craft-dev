@@ -75,7 +75,7 @@ This will lock this project to that port, so you can save it in TablePlus or whe
 #### .ddev/docker-compose.local.yaml
 
 ```shell
-cp .ddev/config.local.yaml.example .ddev/config.local.yaml
+cp .ddev/docker-compose.local.yaml.example .ddev/docker-compose.local.yaml
 ```
 Modify the `volumes` list to include any paths to checked out repos you'd like to work on.
 
