@@ -10,8 +10,11 @@ return [
         'optional' => ['*'],
     ],
 
-    // Required user login for all site requests
-    'asRequiredBasicLogin' => \craft\filters\BasicHttpAuthLogin::class,
+    // Required user login for all site requests, when not in production
+    'as requiredBasicLogin' => [
+        'class' => \craft\filters\BasicHttpAuthLogin::class,
+        'enabled' => \craft\helpers\App::env('CRAFT_ENVIRONMENT') !== 'production',
+    ],
 
     // Block all frontend requests with default credentials from env vars
     'as basicStatic' => \craft\filters\BasicHttpAuthStatic::class,
