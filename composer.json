@@ -5,7 +5,7 @@
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
-    "craftcms/generator": "2.0.x-dev",
+    "craftcms/generator": "2.x-dev",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
