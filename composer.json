@@ -1,7 +1,8 @@
 {
   "require": {
-    "craftcms/cms": "5.x-dev",
     "craftcms/cloud": "2.x-dev",
+    "craftcms/cms": "5.x-dev",
+    "putyourlightson/craft-blitz": "5.5.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

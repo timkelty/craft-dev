@@ -1,21 +1,39 @@
-dateModified: 1720807359
+dateModified: 1727277500
 email:
   fromEmail: tim@craftcms.com
-  fromName: 'Craft Project'
-  replyToEmail: null
-  template: ''
+  fromName: 'Craft 5 Project'
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
+fs:
+  public:
+    hasUrls: true
+    name: Public
+    settings:
+      expires: '1 years'
+      hasUrls: true
+      localFsPath: '@webroot/uploads'
+      localFsUrl: '@web/uploads'
+      subpath: public
+    type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
-    1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
-    283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
+    cf298910-4ef7-4f35-b699-696e0a2f264d: 'Craft 5 Project' # Craft 5 Project
+    e8b9a362-a7a8-4f9a-8a8e-e63b9342f9a3: Images # Images
+    f0c39a84-b18f-4c2f-ad6e-798fc89e9dbc: 'Craft 5 Project' # Craft 5 Project
+plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.5.0
 system:
-  edition: pro
+  edition: solo
   live: true
-  name: 'Craft Project'
-  schemaVersion: 5.0.0.21
+  name: 'Craft 5 Project'
+  schemaVersion: 5.3.0.2
   timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
