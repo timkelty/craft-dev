@@ -5,10 +5,6 @@ email:
   replyToEmail: null
   template: ''
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
@@ -17,5 +13,5 @@ system:
   edition: pro
   live: true
   name: 'Craft Project'
-  schemaVersion: 5.0.0.21
+  schemaVersion: 5.5.0.0
   timeZone: America/Los_Angeles
