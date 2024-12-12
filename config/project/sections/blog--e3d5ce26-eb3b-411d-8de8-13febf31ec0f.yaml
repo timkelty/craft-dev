@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 260b618e-a278-487c-987e-48d0e4195af4 # Blog
+handle: blog
+maxAuthors: 1
+name: Blog
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  1c4db2bd-b409-4bf2-a56e-c3327f0b160e: # Craft Project
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/_entry.twig
+    uriFormat: 'blog/{slug}'
+type: channel

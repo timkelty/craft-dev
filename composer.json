@@ -1,7 +1,9 @@
 {
   "require": {
-    "craftcms/cms": "5.x-dev",
+    "craftcms/ckeditor": "5.0.x-dev",
     "craftcms/cloud": "2.x-dev",
+    "craftcms/cms": "5.x-dev",
+    "solspace/craft-freeform": "^5.8",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

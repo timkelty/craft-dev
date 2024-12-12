@@ -1,4 +1,4 @@
-dateModified: 1720807359
+dateModified: 1734019773
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
@@ -8,7 +8,20 @@ email:
 meta:
   __names__:
     1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
+    260b618e-a278-487c-987e-48d0e4195af4: Blog # Blog
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
+    c6bc4011-a333-44fb-a74a-fd8c85589e3f: Simple # Simple
+    dd594821-140e-4025-b141-9870b2a83ed9: 'RIch Text' # RIch Text
+    e3d5ce26-eb3b-411d-8de8-13febf31ec0f: Blog # Blog
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  freeform:
+    edition: express
+    enabled: true
+    schemaVersion: 5.4.1
 system:
   edition: pro
   live: true

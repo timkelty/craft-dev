@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  8d5caa61-606c-4b53-9fb7-533d0d8613c6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-10T20:32:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5d4f0bee-090e-48f9-a75f-7996a4c9e284
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-10T20:33:25+00:00'
+            elementCondition: null
+            fieldUid: dd594821-140e-4025-b141-9870b2a83ed9 # RIch Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6bf3b9c-acd2-47ce-9543-4bdc13d53a51
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 786e1408-e98e-48f7-9bd2-5f8ffc44691a
+        userCondition: null
+handle: blog
+hasTitleField: true
+icon: ''
+name: Blog
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
