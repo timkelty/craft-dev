@@ -174,12 +174,14 @@
         </div>
         <div id="aside">
             <div class="content">
-                <esi:include src="/foo" />
-                <esi:include src="foo" />
-                <esi:include src="https://craft-dev-5x-37647da5.preview.craftstaging.cloud/foo" />
+                <esi:include src="/foo"></esi:include>
+                <esi:include src="foo"></esi:include>
+                <esi:include src="https://craft-dev-5x-37647da5.preview.craftstaging.cloud/foo"></esi:include>
 
                 <p>Dynamic portion coming from https://httpbin.org/headers:</p>
-                <esi:include src="https://httpbin.org/headers" />
+                <esi:include src="https://httpbin.org/headers"></esi:include>
+                <esi:include src="https://httpbin.org/html"></esi:include>
+
             </div>
         </div>
     </div>
