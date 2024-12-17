@@ -174,8 +174,11 @@
         </div>
         <div id="aside">
             <div class="content">
-                <p>Dynamic portion coming from {{ url('foo') }}:</p>
+                <p>Dynamic portion coming from /foo }}:</p>
+
                 <esi:include src="/foo" />
+
+                <p>Dynamic portion coming from {{ url('foo') }}:</p>
                 <esi:include src="{{ url('foo') }}" />
 
                 <p>Dynamic portion coming from https://httpbin.org/html:</p>
