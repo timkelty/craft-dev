@@ -6,7 +6,7 @@
 // Load shared bootstrap
 require dirname(__DIR__) . '/bootstrap.php';
 
-header('Surrogate-Control: content="ESI/1.0"');
+// header('Surrogate-Control: content="ESI/1.0"');
 
 // Load and run Craft
 /** @var craft\web\Application $app */
