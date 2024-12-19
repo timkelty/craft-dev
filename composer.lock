@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfa0ba1cd62dd52cd73a01bf26a9d476",
+    "content-hash": "e5c67ccfe76d16fa6f64633dd30fb880",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -120,16 +120,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.336.0",
+            "version": "3.336.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5a62003bf183e32da038056a4b9077c27224e034"
+                "reference": "bef061855d6db932aac8f354f774b9b3ad84ad14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a62003bf183e32da038056a4b9077c27224e034",
-                "reference": "5a62003bf183e32da038056a4b9077c27224e034",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bef061855d6db932aac8f354f774b9b3ad84ad14",
+                "reference": "bef061855d6db932aac8f354f774b9b3ad84ad14",
                 "shasum": ""
             },
             "require": {
@@ -212,9 +212,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.1"
             },
-            "time": "2024-12-18T19:04:32+00:00"
+            "time": "2024-12-19T19:03:08+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -684,7 +684,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2-v2",
-                "reference": "58cb7ddfd69898f150bcacc6d99fdafa979ba7ee"
+                "reference": "7ac4ec3d3390d90894981380b3061abf08986e46"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -9282,7 +9282,14 @@
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cloud",
+            "version": "dev-feature/esi",
+            "alias": "2.6.8",
+            "alias_normalized": "2.6.8.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cms": 20,
