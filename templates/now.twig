@@ -1,6 +1,2 @@
-{% if craft.app.request.getQueryParam('esi') %}
-    {% header 'Surrogate-Control: content="ESI/1.0"' %}
-{% endif %}
-
 {% expires %}
 {{ now|time }}
