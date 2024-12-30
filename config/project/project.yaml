@@ -1,4 +1,4 @@
-dateModified: 1720807359
+dateModified: 1735585936
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
@@ -9,6 +9,11 @@ meta:
   __names__:
     1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
+plugins:
+  datastar:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
