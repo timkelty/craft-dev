@@ -1,7 +1,7 @@
 {
   "require": {
     "craftcms/cms": "5.x-dev",
-    "craftcms/cloud": "dev-feature/esi as 2.6.8",
+    "craftcms/cloud": "2.x-dev",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
