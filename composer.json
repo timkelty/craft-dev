@@ -4,6 +4,7 @@
     "craftcms/cloud": "2.x-dev",
     "craftcms/cms": "5.x-dev",
     "putyourlightson/craft-datastar": "^1.0.0-beta.1",
+    "putyourlightson/craft-datastar-module": "dev-develop as 1.0.0-beta.4",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
