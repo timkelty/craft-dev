@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6089befc5b86dc3a2c024053525bd89d",
+    "content-hash": "35425ab97eb494a14569655437cd9625",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -686,7 +686,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2-v2",
-                "reference": "58d159350be345bb1fe5bdf0a4a7a6fb6224eb4d"
+                "reference": "1e63957ff2065276ca7c43b43799aa3aad780bd4"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -4508,16 +4508,16 @@
         },
         {
             "name": "putyourlightson/craft-datastar-module",
-            "version": "dev-develop",
+            "version": "1.0.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/putyourlightson/craft-datastar-module.git",
-                "reference": "a766517e14f3c58ffeef7baa6acb33ef8365fd90"
+                "reference": "253203b77ec99276b56de5502d95dfd76dad8d17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-datastar-module/zipball/a766517e14f3c58ffeef7baa6acb33ef8365fd90",
-                "reference": "a766517e14f3c58ffeef7baa6acb33ef8365fd90",
+                "url": "https://api.github.com/repos/putyourlightson/craft-datastar-module/zipball/253203b77ec99276b56de5502d95dfd76dad8d17",
+                "reference": "253203b77ec99276b56de5502d95dfd76dad8d17",
                 "shasum": ""
             },
             "require": {
@@ -4531,7 +4531,6 @@
                 "markhuot/craft-pest-core": "^2.0.4",
                 "nystudio107/craft-autocomplete": "^1.12"
             },
-            "default-branch": true,
             "type": "yii-module",
             "autoload": {
                 "psr-4": {
@@ -4554,7 +4553,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-31T00:32:02+00:00"
+            "time": "2024-12-24T15:05:51+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -9547,19 +9546,11 @@
             "time": "2024-12-10T14:48:43+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "putyourlightson/craft-datastar-module",
-            "version": "dev-develop",
-            "alias": "1.0.0-beta.4",
-            "alias_normalized": "1.0.0.0-beta4"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "craftcms/cloud": 20,
         "craftcms/cms": 20,
-        "putyourlightson/craft-datastar-module": 20,
         "craftcms/generator": 20
     },
     "prefer-stable": false,
