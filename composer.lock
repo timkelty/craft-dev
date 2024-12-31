@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f21c773d1f1dde658e33ce189e41b292",
+    "content-hash": "cd14bbc1b838d2fea976f8b0ce2d65c1",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -683,10 +683,16 @@
         {
             "name": "craftcms/cloud",
             "version": "2.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/cloud-extension-yii2-v2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cloud-extension-yii2.git",
                 "reference": "1e63957ff2065276ca7c43b43799aa3aad780bd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/1e63957ff2065276ca7c43b43799aa3aad780bd4",
+                "reference": "1e63957ff2065276ca7c43b43799aa3aad780bd4",
+                "shasum": ""
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -711,28 +717,19 @@
                 "bootstrap": "craft\\cloud\\Module"
             },
             "autoload": {
-                "psr-4": {
-                    "craft\\cloud\\": "src/"
-                },
                 "files": [
                     "autoload.php"
-                ]
-            },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
                 ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
+                "psr-4": {
+                    "craft\\cloud\\": "src/"
+                }
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/2.x"
+            },
+            "time": "2024-12-31T19:20:13+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -9559,8 +9556,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
