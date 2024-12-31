@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35425ab97eb494a14569655437cd9625",
+    "content-hash": "f21c773d1f1dde658e33ce189e41b292",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -4509,16 +4509,10 @@
         {
             "name": "putyourlightson/craft-datastar-module",
             "version": "1.0.0-beta.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-datastar-module.git",
-                "reference": "253203b77ec99276b56de5502d95dfd76dad8d17"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-datastar-module/zipball/253203b77ec99276b56de5502d95dfd76dad8d17",
-                "reference": "253203b77ec99276b56de5502d95dfd76dad8d17",
-                "shasum": ""
+                "type": "path",
+                "url": "plugins/craft-datastar-module",
+                "reference": "2ff7bfbd6038fa577c0034e2c7e1247f4ea91699"
             },
             "require": {
                 "craftcms/cms": "^5.0",
@@ -4537,23 +4531,33 @@
                     "putyourlightson\\datastar\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ]
+            },
             "license": [
                 "mit"
             ],
             "description": "A real-time, template-driven hypermedia framework for Craft.",
             "support": {
                 "docs": "https://github.com/putyourlightson/craft-datastar-module",
-                "issues": "https://github.com/putyourlightson/craft-datastar-module/issues",
-                "source": "https://github.com/putyourlightson/craft-datastar-module"
+                "source": "https://github.com/putyourlightson/craft-datastar-module",
+                "issues": "https://github.com/putyourlightson/craft-datastar-module/issues"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/bencroker",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-12-24T15:05:51+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "ralouphie/getallheaders",

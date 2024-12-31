@@ -27,6 +27,13 @@
     }
   },
   "repositories": {
+    "plugins":     {
+      "type": "path",
+      "url": "plugins/*",
+      "options": {
+        "symlink": true
+      }
+    },
     "local": {
       "type": "path",
       "url": "/tmp/packages/*",
