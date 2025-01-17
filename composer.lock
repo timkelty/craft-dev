@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35cdde2527d52a46d56d7e66cd4cbfc3",
+    "content-hash": "6533a484dccbaa4e6a7ecff41833daf9",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -902,10 +902,16 @@
         {
             "name": "craftcms/ckeditor",
             "version": "4.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-ckeditor",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/ckeditor.git",
                 "reference": "edfac1adf8bdc1dce046273f4a21b72b3dac0ba8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/edfac1adf8bdc1dce046273f4a21b72b3dac0ba8",
+                "reference": "edfac1adf8bdc1dce046273f4a21b72b3dac0ba8",
+                "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^5.5.0",
@@ -919,6 +925,7 @@
                 "craftcms/rector": "dev-main",
                 "vlucas/phpdotenv": "^5.5"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "name": "CKEditor",
@@ -930,17 +937,7 @@
                     "craft\\ckeditor\\": "src/"
                 }
             },
-            "scripts": {
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -952,23 +949,20 @@
             ],
             "description": "Edit rich text content in Craft CMS using CKEditor.",
             "keywords": [
-                "ckeditor",
+                "CKEditor",
                 "cms",
                 "craftcms",
                 "html",
                 "yii2"
             ],
             "support": {
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
-                "source": "https://github.com/craftcms/ckeditor",
-                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
-                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
+                "source": "https://github.com/craftcms/ckeditor"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2024-12-10T19:05:08+00:00"
         },
         {
             "name": "craftcms/cloud",
@@ -1024,10 +1018,16 @@
         {
             "name": "craftcms/cms",
             "version": "5.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cms.git",
                 "reference": "955003ab718ea32b92a280ec880776ad86cfed35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/955003ab718ea32b92a280ec880776ad86cfed35",
+                "reference": "955003ab718ea32b92a280ec880776ad86cfed35",
+                "shasum": ""
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
@@ -1108,6 +1108,7 @@
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
                 "ext-imagick": "Adds support for more image processing formats and options."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1115,28 +1116,7 @@
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "crafttests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "copy-icons": [
-                    "php ./scripts/copyicons.php && ecs check src/icons/index.php --fix"
-                ],
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "codecept-build": [
-                    "codecept build"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1154,17 +1134,14 @@
                 "yii2"
             ],
             "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "forum": "https://craftcms.stackexchange.com/",
-                "source": "https://github.com/craftcms/cms",
                 "docs": "https://craftcms.com/docs/5.x/",
-                "rss": "https://github.com/craftcms/cms/releases.atom"
+                "email": "support@craftcms.com",
+                "forum": "https://craftcms.stackexchange.com/",
+                "issues": "https://github.com/craftcms/cms/issues?state=open",
+                "rss": "https://github.com/craftcms/cms/releases.atom",
+                "source": "https://github.com/craftcms/cms"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2025-01-16T21:30:33+00:00"
         },
         {
             "name": "craftcms/flysystem",
