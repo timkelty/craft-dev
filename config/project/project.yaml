@@ -1,4 +1,4 @@
-dateModified: 1734019773
+dateModified: 1737125512
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
@@ -18,10 +18,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  freeform:
-    edition: express
-    enabled: true
-    schemaVersion: 5.4.1
 system:
   edition: pro
   live: true
