@@ -1,5 +1,5 @@
 {% if craft.app.request.getParam('esi') %}
-    {{ craft.cloud.enableEsi() }}
+    {% do cloud.enableEsi() %}
 {% endif %}
 
 {% set tag = "<esi:include src=\"#{src}\" />" %}
