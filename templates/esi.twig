@@ -1,0 +1,13 @@
+{% for src in [
+    '/now',
+    '/me',
+    url('me'),
+    '/nested',
+    '/nested?esi=1',
+    'https://httpbin.org/headers',
+] %}
+    {% include '_esi.twig' with {
+        src: src,
+    } %}
+    <hr>
+{% endfor %}

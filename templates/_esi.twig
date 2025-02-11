@@ -1,0 +1,7 @@
+{% if craft.app.request.getParam('esi') %}
+    {{ craft.cloud.enableEsi() }}
+{% endif %}
+
+{% set tag = "<esi:include src=\"#{src}\" />" %}
+<pre><code>{{ tag }}</code></pre>
+{{ tag|raw }}
