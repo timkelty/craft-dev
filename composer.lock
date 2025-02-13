@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36b604b5b037c2d806cfd48a8e4ec1dd",
+    "content-hash": "c61bd869339042be7a70a1109ade348f",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -8880,7 +8880,14 @@
             "time": "2025-02-13T21:05:12+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cloud",
+            "version": "dev-feature/sync-queue-release",
+            "alias": "1.66.0",
+            "alias_normalized": "1.66.0.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cloud": 20,
