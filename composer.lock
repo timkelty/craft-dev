@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "654e9ad975ea47c3fc32e9a8da23ac9a",
+    "content-hash": "36b604b5b037c2d806cfd48a8e4ec1dd",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -1123,17 +1123,17 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.x-dev",
+            "version": "dev-feature/sync-queue-release",
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/cloud-extension-yii2",
-                "reference": "182ad53d68dc5e58e490797b68891015d5939f24"
+                "reference": "2a0b036eb8f1972be6caddb0f98fecfb04f88d04"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
                 "bref/bref": "2.1.21",
                 "bref/extra-php-extensions": "1.3.2",
-                "craftcms/cms": "^4.6",
+                "craftcms/cms": "4.15.x-dev",
                 "craftcms/flysystem": "^1.0.0",
                 "league/flysystem-aws-s3-v3": "^3.15",
                 "league/uri": "^7",
