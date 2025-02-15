@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bf2cd09ff16ffe3a55c57ab1580d77c",
+    "content-hash": "a1657dad40c5c18a19eb6bdcf1d11476",
     "packages": [
         {
             "name": "99designs/http-signatures",
@@ -732,10 +732,16 @@
         {
             "name": "craftcms/cms",
             "version": "5.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "/tmp/packages/craft-5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cms.git",
                 "reference": "59f51a820a90f47f22ea9cc8e6c137bffc35b236"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/59f51a820a90f47f22ea9cc8e6c137bffc35b236",
+                "reference": "59f51a820a90f47f22ea9cc8e6c137bffc35b236",
+                "shasum": ""
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
@@ -819,6 +825,7 @@
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
                 "ext-imagick": "Adds support for more image processing formats and options."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -826,28 +833,7 @@
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "crafttests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "copy-icons": [
-                    "php ./scripts/copyicons.php && ecs check src/icons/index.php --fix"
-                ],
-                "check-cs": [
-                    "ecs check --ansi"
-                ],
-                "fix-cs": [
-                    "ecs check --ansi --fix"
-                ],
-                "codecept-build": [
-                    "codecept build"
-                ],
-                "phpstan": [
-                    "phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -865,17 +851,14 @@
                 "yii2"
             ],
             "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "forum": "https://craftcms.stackexchange.com/",
-                "source": "https://github.com/craftcms/cms",
                 "docs": "https://craftcms.com/docs/5.x/",
-                "rss": "https://github.com/craftcms/cms/releases.atom"
+                "email": "support@craftcms.com",
+                "forum": "https://craftcms.stackexchange.com/",
+                "issues": "https://github.com/craftcms/cms/issues?state=open",
+                "rss": "https://github.com/craftcms/cms/releases.atom",
+                "source": "https://github.com/craftcms/cms"
             },
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2025-02-14T23:47:07+00:00"
         },
         {
             "name": "craftcms/flysystem",
