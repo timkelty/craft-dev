@@ -684,12 +684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "e96d993774257c57ea9a40a0b18f20faa34674bb"
+                "reference": "342a71c2c6b08b11989357f708110e4a83ee232b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/e96d993774257c57ea9a40a0b18f20faa34674bb",
-                "reference": "e96d993774257c57ea9a40a0b18f20faa34674bb",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/342a71c2c6b08b11989357f708110e4a83ee232b",
+                "reference": "342a71c2c6b08b11989357f708110e4a83ee232b",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
                 "source": "https://github.com/craftcms/cloud-extension-yii2/tree/2.x"
             },
-            "time": "2025-02-13T21:21:44+00:00"
+            "time": "2025-02-15T21:04:23+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -735,7 +735,7 @@
             "dist": {
                 "type": "path",
                 "url": "/tmp/packages/craft-5",
-                "reference": "5f53f6915d32dfb1556193befbdcc8d0138d8b8b"
+                "reference": "59f51a820a90f47f22ea9cc8e6c137bffc35b236"
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
