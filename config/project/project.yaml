@@ -1,13 +1,20 @@
-dateModified: 1705627485
+dateModified: 1741962721
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0ba9c451-19fc-4f31-b4df-198d4d5fd8c8: Default # Default
     1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
+    a4114a0c-cde1-4938-abac-2d59a08cfad3: Blog # Blog
+plugins:
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.1
 system:
   edition: pro
   live: true

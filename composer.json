@@ -1,6 +1,7 @@
 {
     "require": {
-        "craftcms/cloud": "dev-feature/sync-queue-release as 1.66.0",
+        "craftcms/cloud": "^1.66.0",
+        "craftcms/feed-me": "dev-feature/1584-batched-job as 5.x-dev",
         "craftcms/cms": "4.15.x-dev",
         "vlucas/phpdotenv": "^5.4.0"
     },
