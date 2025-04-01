@@ -1,13 +1,25 @@
-dateModified: 1705627485
+dateModified: 1743450326
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      expires: '1 years'
+      hasUrls: true
+      localFsPath: '@webroot/uploads'
+      localFsUrl: /uploads
+      subpath: null
+    type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
     1c4db2bd-b409-4bf2-a56e-c3327f0b160e: 'Craft Project' # Craft Project
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
+    b0a49e7b-8490-450c-ba0b-8f2ae4ddd49c: Uploads # Uploads
 system:
   edition: pro
   live: true

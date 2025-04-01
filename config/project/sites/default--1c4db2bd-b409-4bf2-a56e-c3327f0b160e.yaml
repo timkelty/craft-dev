@@ -1,9 +1,9 @@
-baseUrl: '$PRIMARY_SITE_URL'
+baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true
 language: en-US
 name: 'Craft Project'
 primary: true
-siteGroup: 283a253c-a365-4823-89c4-b48fbd2232a3 # Craft 4 Project
+siteGroup: 283a253c-a365-4823-89c4-b48fbd2232a3 # Craft Project
 sortOrder: 1
