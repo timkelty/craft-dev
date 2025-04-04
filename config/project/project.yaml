@@ -1,4 +1,4 @@
-dateModified: 1743450326
+dateModified: 1743779181
 email:
   fromEmail: tim@craftcms.com
   fromName: 'Craft Project'
@@ -20,6 +20,11 @@ meta:
     81a6b84b-4e06-4828-a256-d2d537885644: Common # Common
     283a253c-a365-4823-89c4-b48fbd2232a3: 'Craft Project' # Craft Project
     b0a49e7b-8490-450c-ba0b-8f2ae4ddd49c: Uploads # Uploads
+plugins:
+  google-maps:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.6.0
 system:
   edition: pro
   live: true
