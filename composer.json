@@ -33,7 +33,7 @@
     "repositories": {
         "local": {
             "type": "path",
-            "url": "/tmp/packages/*",
+            "url": "packages/*/*",
             "options": {
                 "symlink": true
             }
