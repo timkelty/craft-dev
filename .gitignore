@@ -4,3 +4,8 @@
 .DS_Store
 .ddev/docker-compose.local.yaml
 config/license.key
+
+node_modules
+dist
+dist-ssr
+*.local

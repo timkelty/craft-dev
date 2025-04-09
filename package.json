@@ -1,0 +1,19 @@
+{
+  "name": "craft-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "vite": "^6.2.0",
+    "vite-plugin-craftcms": "^3.0.0"
+  },
+  "dependencies": {
+    "vite-plugin-restart": "^0.4.2"
+  }
+}
