@@ -23,12 +23,11 @@ checkout-package:
 			$(GIT) clone https://github.com/$(PACKAGE).git ./packages/$(PACKAGE); \
 		fi; \
 	fi
+	$(COMPOSER) config repositories.local --json '{"type": "path", "url": "packages/*/*", "options": { "symlink": true } }'
+	$(COMPOSER) update $(PACKAGE)
 
 checkout-packages:
-	@$(MAKE) checkout-package PACKAGE=craftcms/cms BRANCH=4.x
+	@$(MAKE) checkout-package PACKAGE=craftcms/cms BRANCH=4.15
 	@$(MAKE) checkout-package PACKAGE=craftcms/commerce BRANCH=4.x
 	@$(MAKE) checkout-package PACKAGE=craftcms/ckeditor BRANCH=3.x
 	@$(MAKE) checkout-package PACKAGE=craftcms/cloud-extension-yii2 BRANCH=1.x
-
-use-packages:
-	$(COMPOSER) config repositories.local --json '{"type": "path", "url": "packages/*/*", "options": { "symlink": true } }'
