@@ -1,0 +1,5 @@
+{% extends '_layouts/html' %}
+{% set locale = craft.app.i18n.getLocaleById('es') %}
+{% block body %}
+    {% include '_partials/vite' ignore missing %}
+{% endblock %}

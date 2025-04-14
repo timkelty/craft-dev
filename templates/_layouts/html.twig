@@ -1,0 +1,13 @@
+{%- set locale = locale ?? craft.app.locale -%}
+<!DOCTYPE {{- attr({html: true} | merge (doctype ?? {})) }}>
+{% tag "html" with { lang: locale.languageId, dir: locale.orientation } | merge(html ?? {}) ~%}
+    {%~ tag "head" with head ?? {} ~%}
+        {{~ block("head") ?? "" -}}
+    {%~ endtag %}
+
+    {%~ block html %}
+        {%~ tag "body" with body ?? {} ~%}
+            {{~ block("body") ?? "" -}}
+        {%~ endtag ~%}
+    {%~ endblock %}
+{% endtag %}

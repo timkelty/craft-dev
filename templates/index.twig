@@ -1,34 +1,26 @@
-{% include '_partials/vite' ignore missing %}
+{% extends '_layouts/default' %}
+{% block body %}
+    <code>
+        <pre>{{ include('_root/craft-cloud.yaml') }}</pre>
+    </code>
 
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-</head>
-<body class="ltr">
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>VCS asset from {{ alias('@webroot/static/test.svg') }}</th>
+            <td>
+                {{ tag('img', {
+                    src: artifactUrl('static/test.svg'),
+                    height: '50px',
+                }) }}
+            </td>
+        </tr>
+        <tr>
+            <th>SVG function from {{ alias('@webroot/static/test.svg') }}</th>
+            <td>
+                {{ svg('@webroot/static/test.svg') }}
+            </td>
+        </tr>
+    </table>
 
-<code>
-    <pre>{{ include('_root/craft-cloud.yaml') }}</pre>
-</code>
-
-<table border="1" cellpadding="10">
-    <tr>
-        <th>VCS asset from {{ alias('@webroot/static/test.svg') }}</th>
-        <td>
-            {{ tag('img', {
-                src: artifactUrl('static/test.svg'),
-                height: '50px',
-            }) }}
-        </td>
-    </tr>
-    <tr>
-        <th>SVG function from {{ alias('@webroot/static/test.svg') }}</th>
-        <td>
-            {{ svg('@webroot/static/test.svg') }}
-        </td>
-    </tr>
-</table>
-
-<div id="app"></div>
-
-</body>
-</html>
+    <div id="app"></div>
+{% endblock %}
