@@ -1127,7 +1127,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/craftcms/cloud-extension-yii2",
-                "reference": "390f2cdc40ab542d1c16442c171feba1a436a7ab"
+                "reference": "dc998c9732444647178ed3131f948c7a0ae84ec7"
             },
             "require": {
                 "99designs/http-signatures": "^4.0",
@@ -1181,7 +1181,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/craftcms/cms",
-                "reference": "efb900d2c84b8a41399a8bb43c2840923acc1bc8"
+                "reference": "15cb93cc77943a58400ebd804d9fc1392759ec69"
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
@@ -1210,7 +1210,7 @@
                 "pixelandtonic/imagine": "~1.3.3.1",
                 "samdark/yii2-psr-log-target": "^1.1.3",
                 "seld/cli-prompt": "^1.0.4",
-                "symfony/http-client": "^6.0.3",
+                "symfony/http-client": "^6.0.3|^7.0",
                 "symfony/var-dumper": "^5.0|^6.0",
                 "symfony/yaml": "^5.2.3",
                 "theiconic/name-parser": "^1.2",
