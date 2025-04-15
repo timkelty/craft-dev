@@ -1,5 +1,9 @@
 {% extends '_layouts/html' %}
-{% set locale = craft.app.i18n.getLocaleById('es') %}
+{#{% set locale = craft.app.i18n.getLocaleById('es') %}#}
 {% block body %}
+    {{ tag('a', {
+        href: currentUser ? logoutUrl : loginUrl,
+        text: currentUser ? 'Sign out' : 'Sign in',
+    }) }}
     {% include '_partials/vite' ignore missing %}
 {% endblock %}
