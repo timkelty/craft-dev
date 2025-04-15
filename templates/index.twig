@@ -1,5 +1,6 @@
 {% extends '_layouts/default' %}
 {% block body %}
+    {{ parent() }}
     <code>
         <pre>{{ include('_root/craft-cloud.yaml') }}</pre>
     </code>

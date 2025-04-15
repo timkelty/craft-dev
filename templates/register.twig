@@ -1,0 +1,53 @@
+{% extends '_layouts/default' %}
+{% block body %}
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% set user = user ?? null %}
+    <form method="post" accept-charset="UTF-8" data-affiliated-site="{{ currentSite.handle }}">
+        {{ csrfInput() }}
+        {{ actionInput('users/save-user') }}
+
+        {# Use email-as-username if configured #}
+        {% if craft.app.config.general.useEmailAsUsername %}
+            <input type="hidden" name="username" value="{{ user.email ?? '' }}">
+        {% else %}
+            <label for="username">Username</label>
+            {{ input('text', 'username', user.username ?? null, {
+                id: 'username',
+                autocomplete: 'username'
+            }) }}
+            {{ user ? _self.errorList(user.getErrors('username')) }}
+        {% endif %}
+
+        <label for="full-name">Full Name</label>
+        {{ input('text', 'fullName', user.fullName ?? null, {
+            id: 'full-name',
+            autocomplete: 'name'
+        }) }}
+        {{ user ? _self.errorList(user.getErrors('fullName')) }}
+
+        <label for="email">Email</label>
+        {{ input('email', 'email', user.email ?? null, {
+            id: 'email',
+            autocomplete: 'email'
+        }) }}
+        {{ user ? _self.errorList(user.getErrors('email')) }}
+
+        <label for="password">Password</label>
+        {{ input('password', 'password', null, {
+            id: 'password',
+            autocomplete: 'new-password'
+        }) }}
+        {{ user ? _self.errorList(user.getErrors('password')) }}
+
+        <button type="submit">Register</button>
+    </form>
+{% endblock %}
