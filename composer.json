@@ -1,7 +1,9 @@
 {
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "craftcms/cloud": "^1",
-        "craftcms/cms": "^4.15.0",
+        "craftcms/cms": "^4",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
