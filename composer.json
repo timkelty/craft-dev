@@ -25,12 +25,5 @@
         ]
     },
     "repositories": {
-        "local": {
-            "type": "path",
-            "url": "packages/*/*",
-            "options": {
-                "symlink": true
-            }
-        }
     }
 }
