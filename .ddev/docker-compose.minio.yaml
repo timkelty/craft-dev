@@ -21,6 +21,7 @@ services:
       --address
       :10101
     volumes:
+      - ${DDEV_APPROOT}:/var/task:ro
       - "minio:/data"
       - ".:/mnt/ddev_config"
       - ddev-global-cache:/mnt/ddev-global-cache
